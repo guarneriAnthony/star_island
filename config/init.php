@@ -7,17 +7,17 @@ const CONFIG=[
     'db'=>[
         'HOST'=>'localhost',
         'PORT'=>'3306',
-        'NAME'=>'crud',
+        'NAME'=>'star_island',
         'USER'=>'root',
         'PWD'=>''
 
     ],
     'app'=>[
-        'name'=>'CRUD',
-        'projecturl'=>'http://localhost/PHP/gitCrud/crud'
+        'name'=>'star_island',
+        'projecturl'=>'http://localhost/PHP/star_island'
     ]
 
 ];
 
-const BASE_PATH='/PHP/gitCrud/crud/';
+const BASE_PATH='/PHP/star_island';
 
