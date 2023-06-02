@@ -23,26 +23,33 @@ function updateCountdown() {
 
 updateCountdown();
 
-document.addEventListener("DOMContentLoaded", function() {
-    var discordElements = document.getElementsByClassName("class_discorde");
-    var reseauxElements = document.getElementsByClassName("reseaux");
-    var sideBarElements = document.getElementsByClassName("class_sidebar");
 
-    for (var i = 0; i < discordElements.length; i++) {
-      discordElements[i].addEventListener("mouseover", function() {
-        for (var j = 0; j < reseauxElements.length; j++) {
-          reseauxElements[j].style.opacity = "1";
-          reseauxElements[j].style.transition = "2s";
-        }
-      });
+
+
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+  // Vérifier si la largeur de l'écran est inférieure à votre valeur souhaitée
+  if (screenWidth > 846) {
+    document.addEventListener("DOMContentLoaded", function() {
+      var discordElements = document.getElementsByClassName("class_discorde");
+      var reseauxElements = document.getElementsByClassName("reseaux");
   
-      discordElements[i].addEventListener("mouseout", function() {
-        for (var j = 0; j < reseauxElements.length; j++) {
-          reseauxElements[j].style.opacity = "0";
-          reseauxElements[j].style.transition = "5s";
-        }
-      });
-      
-   
-    }
-  });
+      for (var i = 0; i < discordElements.length; i++) {
+        discordElements[i].addEventListener("mouseover", function() {
+          for (var j = 0; j < reseauxElements.length; j++) {
+            reseauxElements[j].style.opacity = "1";
+            reseauxElements[j].style.transition = "2s";
+          }
+        });
+    
+        discordElements[i].addEventListener("mouseout", function() {
+          for (var j = 0; j < reseauxElements.length; j++) {
+            reseauxElements[j].style.opacity = "0";
+            reseauxElements[j].style.transition = "5s";
+          }
+        });
+        
+     
+      }
+    });  
+  }
