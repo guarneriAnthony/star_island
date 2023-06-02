@@ -22,3 +22,27 @@ function updateCountdown() {
 }
 
 updateCountdown();
+
+document.addEventListener("DOMContentLoaded", function() {
+    var discordElements = document.getElementsByClassName("class_discorde");
+    var reseauxElements = document.getElementsByClassName("reseaux");
+    var sideBarElements = document.getElementsByClassName("class_sidebar");
+
+    for (var i = 0; i < discordElements.length; i++) {
+      discordElements[i].addEventListener("mouseover", function() {
+        for (var j = 0; j < reseauxElements.length; j++) {
+          reseauxElements[j].style.opacity = "1";
+          reseauxElements[j].style.transition = "2s";
+        }
+      });
+  
+      discordElements[i].addEventListener("mouseout", function() {
+        for (var j = 0; j < reseauxElements.length; j++) {
+          reseauxElements[j].style.opacity = "0";
+          reseauxElements[j].style.transition = "2s";
+        }
+      });
+      
+   
+    }
+  });
