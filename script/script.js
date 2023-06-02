@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
       discordElements[i].addEventListener("mouseout", function() {
         for (var j = 0; j < reseauxElements.length; j++) {
           reseauxElements[j].style.opacity = "0";
-          reseauxElements[j].style.transition = "2s";
+          reseauxElements[j].style.transition = "5s";
         }
       });
       

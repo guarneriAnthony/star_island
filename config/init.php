@@ -5,7 +5,7 @@ session_start();
 
 const CONFIG=[
     'db'=>[
-        'HOST'=>'localhost',
+        'HOST'=>'127.0.0.1',
         'PORT'=>'3306',
         'NAME'=>'star_island',
         'USER'=>'root',
@@ -19,5 +19,5 @@ const CONFIG=[
 
 ];
 
-const BASE_PATH='/PHP/star_island';
+const BASE_PATH='/PHP/star_island/index.php';
 
