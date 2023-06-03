@@ -38,7 +38,7 @@ updateCountdown();
         discordElements[i].addEventListener("mouseover", function() {
           for (var j = 0; j < reseauxElements.length; j++) {
             reseauxElements[j].style.opacity = "1";
-            reseauxElements[j].style.transition = "2s";
+            reseauxElements[j].style.transition = "1s";
           }
         });
     

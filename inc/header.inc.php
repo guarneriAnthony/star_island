@@ -31,15 +31,15 @@
                 </li>
             </ul>
         </div>
-        <div>
-            <ul>
+        <div class="class-div">
+            <ul class="class-ul">
                 <li class="nav-item item-row">   
                     <img src="./assets/vector.png">    
-                    <p>Tutoriel</p>
+                    <p class="class-text">Tutoriel</p>
                 </li>
                 <li class="nav-item item-row">   
                     <img src="./assets/vector1.png">    
-                    <p>Event</p>
+                    <p class="class-text">Event</p>
                 </li>
             </ul>
         </div>

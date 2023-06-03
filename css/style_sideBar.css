@@ -1,0 +1,47 @@
+.class-li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.class_navBar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    }
+
+.class_sidebar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 25px;
+    width: auto;
+} 
+
+.class_discorde {
+    z-index: 2;
+}
+
+.class_sidebar img {
+    width: 50%;
+    height: auto;
+    margin: 0 3.75% 0 3.75%;
+}
+
+.reseaux {
+     opacity: 0 ;
+}
+
+
+
+
+@media screen  and (max-width: 845px) {
+    .reseaux {
+        opacity: 1;
+    }
+}

@@ -11,7 +11,7 @@
     text-decoration: none;
 }
 
-body {
+.class-body {
     background-image: url('../assets/gta_decors2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,16 +19,26 @@ body {
     text-align: center;
 }
 
-main {
+.class-main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    margin-top: 5%;
 }
 
 
+.container-punshLine {
+    margin: 5% 0 5% 0;
+}
+.container-punshLine p {
+    width: 75%;
+    margin: auto;
+    font-size: 40px;
+    color: white;
+}
 
 .section-timer {
     display: flex;
@@ -41,69 +51,17 @@ main {
     font-size: 120px;
     text-align: center;
 }
-.container-punshLine {
-    margin: 5% 0 5% 0;
-}
-.container-punshLine p {
-    width: 75%;
-    margin: auto;
-    font-size: 40px;
-    color: white;
-}
-
-li {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.class_navBar {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    }
-
-.class_sidebar {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    border-radius: 25px;
-    width: auto;
-} 
-
-.class_discorde {
-    z-index: 2;
-}
-
-
-
-
-
-
-nav {
-    position: absolute;
-    bottom: 50px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-;
-
-}
-.class_sidebar img {
-    width: 50%;
-    height: auto;
-    margin: 0 3.75% 0 3.75%;
-}
-
-.reseaux {
-     opacity: 0 ;
-}
-
 
 
 
 
 @media screen  and (max-width: 845px) {
+    .class-main {
+        height: 100vh;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
     #countdown {            
       font-size: 30px; 
     }
@@ -111,7 +69,5 @@ nav {
         font-size: 25px;
         margin-bottom: 15%;
     }
-    .reseaux {
-        opacity: 1;
-    }
+
 }

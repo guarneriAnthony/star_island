@@ -12,13 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style_sidebar.css">
     <link href="./css/style_teaser.css" rel="stylesheet">
+    <link href="./css/style_sideBar.css" rel="stylesheet">
     <title> Page teaser</title>
 </head>
 
-<body>
+<body class="class-body">
 
     <main class="class-main">
-        <div>
+        <div class="container-logo">
             <img class="class-logo" src="./assets/starisland.png">
         </div>
         <div class="container-punshLine">
