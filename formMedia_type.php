@@ -6,27 +6,27 @@ require_once './inc/header.inc.php';
  if (!empty($_POST)) {
     $error = false;
 
-    if (empty($_POST['meta_title'])) {
+    if (empty($_POST['title'])) {
         $nickname='Le nom de la page est obligatoire';
         $error=true;
      }
 
      if (!$error) {
-        $resultPost=execute("INSERT INTO page (meta_title) VALUES (:meta_title)", array(
-            ':meta_title'=>$_POST['meta_title'],
-        ), 'ggg');
+        $resultPost=execute("INSERT INTO media_type (title) VALUES (:title)", array(
+            ':title'=>$_POST['title'],
+        ),);
     }
  }
 ?>
 
 
-<!--Post de Page-->
+<!--Post de Media_type-->
 <form class="mt-5 w-75 mx-auto" method="post" enctype="multipart/form-data">
     <div class="mb-3">
-        <label for="namePage" class="form-label">Nom / Titre de la page :</label>
-        <input name="meta_title" type="text" class="form-control" id="namePage">
+        <label for="mediaType" class="form-label">Type de media :</label>
+        <input name="title" type="text" class="form-control" id="mediaType">
         <small class="text-danger"><?= $nickname ?? ""; ?></small>
     </div>
-    <button type="submit" class="btn btn-primary">Submit Page</button>
+    <button type="submit" class="btn btn-primary">Submit Media_type</button>
 </form>
 
