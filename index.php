@@ -2,11 +2,9 @@
             require_once 'inc/header.inc.php';                   
 ?>
 
-<?php 
-echo '<pre>';
-var_dump($_SESSION);
-echo'</pre>';
-?>
+<section class="">
+
+</section>
 
 
 
