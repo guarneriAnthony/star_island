@@ -32,3 +32,11 @@
     margin: 0 1rem 0 2rem;
     color: white;
 }
+
+
+
+
+.navbar{
+    position: sticky;
+    width: 100vw;
+}
