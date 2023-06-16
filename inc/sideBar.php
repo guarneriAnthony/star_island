@@ -1,4 +1,4 @@
-<nav class="class_navBar">
+<nav class="class_navBar" id="sideBar">
     <ul class="class_sidebar">
         <li class="class-li"><a href="#"><img src="./assets/facebook.png" class="reseaux" alt="logo-facebook"></a></li>
         <li class="class-li"><a href="#"><img src="./assets/twitter.png" class="reseaux" alt="logo-twitter"></a></li>

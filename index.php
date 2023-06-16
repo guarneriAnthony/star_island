@@ -13,7 +13,9 @@ require_once 'inc/header.inc.php';
         <!--ITEM 1-->
         <div class="carousel-item active">
             <h2>First slide label</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id iure rem sequi similique. Doloremque ducimus ea magni nam nisi omnis soluta! Amet doloremque itaque, labore officia pariatur quae quo sunt!</p>
+            <p class="text-index">Bienvenue sur notre serveur dédié à GTA 5 ! Rejoignez notre communauté passionnée et profitez d'une expérience de jeu gratuite et captivante. <br><br>
+                Plongez dans un monde ouvert où vous pourrez simuler la vie urbaine, participer à des braquages palpitants et interagir avec une communauté active. <br><br>
+                Rejoignez-nous dès maintenant pour des moments distrayants et intenses.</p>
         </div>
         <!--ITEM 2-->
         <div class="carousel-item" id="carouselWidth">
@@ -44,15 +46,22 @@ require_once 'inc/header.inc.php';
         </div>
     </div>
 </div>
+<!--ATTENTION LE STYLE DE SIDEBAR AFFECT LINDEX-->
+<?php require_once 'inc/sideBar.php';?>
 <!--Espace commentaire du bas-->
-<div class="containerComments">
-    <div class="commentOne rounded-top rounded-start"></div>
-    <div class="commentTwo"></div>
-    <div class="commentThree"></div>
-    <div class="commentFour"></div>
+<div class=" container containerComments">
+    <section class="commentsLeft commentsBorders">
+        <div class="commentOne commentsBordersLeft"></div>
+        <div class="commentTwo commentsBordersRight"></div>
+    </section>
+    <section class="commentsRight">
+        <div class="commentThree commentsBordersLeft"></div>
+        <div class="commentFour commentsBordersRight"></div>
+    </section>
 
-    <div class="card text-center">
-        <div class="card-body">
+
+    <div class="card text-center" id="avisLet">
+        <div class="card-body" >
             <h5 class="card-title">Votre avis nous intéresse</h5>
             <p class="card-text"><img src="./assets/RéseauxSociaux.png"></p>
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>

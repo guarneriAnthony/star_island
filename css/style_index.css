@@ -8,12 +8,16 @@
 }
 
 body {
-    background-color: blueviolet;
+    background-image: url(../assets/AdobeStock_101303147_Preview.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
-
 .carousel-item{
     color: white;
 }
+
   *,
   *::after,
   *::before {
@@ -42,8 +46,8 @@ body {
     transition: transform 0.5s ease-out, left 0.5s ease-out;
   }
   
-  img {
-    max-width: 100vh;
+  .card-text img {
+    max-width: 40vh;
   }
  
   .wrapper:has(+ * + * + .selected) {
@@ -155,10 +159,71 @@ body {
   #carouselWidth img {
     max-width: 80vw;
   }
-  
+  /************************************/
+
+  .commentsLeft {
+    display: flex;
+    flex-direction: column;
+  }
+  .commentsRight {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
   .commentOne {
-    height: 50vh;
-    width: 100%;
-    background-color: aqua;
+    height: 20vh;
+    width: 25vw;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .commentTwo {
+    height: 20vh;
+    width: 25vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    align-self: flex-end;
+  }
+  .commentThree {
+    height: 20vh;
+    width: 25vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    align-self: flex-start;
+  }
+  .commentFour {
+    height: 20vh;
+    width: 25vw;
+    background-color: rgba(255, 255, 255, 0.5);
   }
   
+  .text-index {
+    text-align: center;
+  }
+
+  .commentsBordersLeft {
+    border-radius: 24px 24px 0px 24px;
+  }
+  .commentsBordersRight {
+    border-radius: 24px 24px 24px 0px;
+  }
+
+  .commentOne, .commentTwo, .commentThree, .commentFour {
+    margin: 42px 0px;
+  }
+#avisLet {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+#sideBar {
+  position: sticky;
+}
+
+
+  /*************************************/
+
+ @media screen and (max-width: 768px) {
+  .commentOne, .commentTwo, .commentThree, .commentFour {
+    align-self: center;
+    margin: 15px 0px;
+    width: 50vw;
+    height: 10vh;
+  }
+ 
+ }

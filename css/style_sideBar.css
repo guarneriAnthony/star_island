@@ -1,4 +1,4 @@
-.class-li {
+.class-li, .class-spaceDiscord {
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -25,6 +25,7 @@
 
 .class_discorde {
     z-index: 2;
+    list-style: none;
 }
 
 .class_sidebar img {
