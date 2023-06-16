@@ -10,13 +10,13 @@ require_once 'inc/header.inc.php';
         <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
+        <!--ITEM 1-->
         <div class="carousel-item active">
             <h2>First slide label</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id iure rem sequi similique. Doloremque ducimus ea magni nam nisi omnis soluta! Amet doloremque itaque, labore officia pariatur quae quo sunt!</p>
         </div>
         <!--ITEM 2-->
-        <div class="carousel-item">
-
+        <div class="carousel-item" id="carouselWidth">
             <div class="gallery">
                 <div id="slider" class="slider">
                 </div>
@@ -36,19 +36,17 @@ require_once 'inc/header.inc.php';
                 </div>
             </div>
         </div>
-        <!--FIN ITEM 2-->
-        <!--Troisieme item Carousel-->
+        <!--ITEM 3-->
         <div class="carousel-item">
             <section class="commentTopServeur">
                 <img class="" src="./assets/discord.png">
             </section>
         </div>
     </div>
-     <!--FIN troisieme item Carousel-->
 </div>
 <!--Espace commentaire du bas-->
 <div class="containerComments">
-    <div class="commentOne"></div>
+    <div class="commentOne rounded-top rounded-start"></div>
     <div class="commentTwo"></div>
     <div class="commentThree"></div>
     <div class="commentFour"></div>
@@ -62,8 +60,6 @@ require_once 'inc/header.inc.php';
         </div>
 
     </div>
-    <!--FIN Espace commentaire du bas-->
-
 
 
 

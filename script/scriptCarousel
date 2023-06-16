@@ -22,26 +22,44 @@ function init() {
     );
     imageWrapper.appendChild(image);
     gallery.appendChild(imageWrapper);
-  }
+    let touchstartX = 0
+    let touchendX = 0
+
+    function checkDirection() {
+        if (touchendX < touchstartX) nextImg()
+        if (touchendX > touchstartX) prevImg()
+    }
+
+    image.addEventListener('touchstart', e => {
+        touchstartX = e.changedTouches[0].screenX
+    })
+
+    image.addEventListener('touchend', e => {
+        touchendX = e.changedTouches[0].screenX
+        checkDirection()
+    })
+}
 }
 
 init();
 
-right.onclick = function () {
-  selected++;
-  if (selected > images - 1) {
+right.onclick = nextImg;
+function nextImg () {
+selected++;
+if (selected > images - 1) {
     selected = images - 1;
-  }
-  handleSelection();
-};
+}
+handleSelection();
+}
 
-left.onclick = function () {
-  selected--;
-  if (selected < 0) {
+left.onclick = prevImg;
+function prevImg () {
+selected--;
+if (selected < 0) {
     selected = 0;
-  }
-  handleSelection();
-};
+}
+handleSelection();
+}
 
 function handleSelection() {
   var images = document.getElementsByClassName("wrapper");
