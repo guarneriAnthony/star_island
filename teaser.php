@@ -20,10 +20,12 @@
 
     <main class="class-main">
         <div class="container-logo">
-            <img class="class-logo" src="./assets/starisland.png">
+            <img class="class-logo" src="./assets/starisland.png" alt="logo-starIsland">
         </div>
         <div class="container-punshLine">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et autem amet adipisci voluptatem. Tenetur velit dolor recusandae earum dolorem sint sunt laudantium cum omnis. Fuga deserunt inventore ex a temporibus.</p>
+            <p> Bienvenue sur notre serveur dédié à GTA 5 ! Rejoignez notre communauté passionnée et profitez d'une expérience de jeu gratuite et captivante. <br><br>
+            Plongez dans un monde ouvert où vous pourrez simuler la vie urbaine, participer à des braquages palpitants et interagir avec une communauté active. <br><br>
+            Rejoignez-nous dès maintenant pour des moments distrayants et intenses.</p>
         </div>
         <div class="container-timerSidebar">
             <p id="countdown">.</p>
