@@ -31,7 +31,7 @@
 }
 
 .class_sidebar img {
-    width: 50%;
+    width: 25%;
     height: auto;
     margin: 0 3.75% 0 3.75%;
 }
@@ -42,12 +42,18 @@
 
 #sideBar {
     position: fixed;
-    bottom: 5vh;
+    bottom: 0;
   }
 
 
 @media screen  and (max-width: 845px) {
     .reseaux {
         opacity: 1;
+    }
+    .class_sidebar img {
+        width: 80%;
+    }
+    #sideBar {
+        bottom: 4vh;
     }
 }

@@ -9,11 +9,17 @@
 :root {
   --image-size: 500px;
 }
+body {
+  background-image: url(../assets/AdobeStock_101303147_Preview.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 
 
 /* GENERAL CSS */
-.text-index {
+.titleIndex, .text-index {
   text-align: center;
 }
 .carousel-item.active {
@@ -21,15 +27,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
+  margin-bottom: 5vh;
 }
-
-body {
-  background-image: url(../assets/AdobeStock_101303147_Preview.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.carousel-inner {
+  height: 100vh;
 }
 .carousel-item {
   color: white;
@@ -111,7 +114,7 @@ body {
 }
 .arrows {
   position: absolute;
-  bottom: 0;
+  bottom: 0vh;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -162,6 +165,9 @@ img {
 #carouselWidth img {
   max-width: 80vw;
 }
+.carousel-indicators {
+  margin-bottom: 6rem;
+}
 
 /*DISCUTION*/
 .commentsLeft {
@@ -210,8 +216,8 @@ img {
   align-items: center;
   justify-content: space-between;
   margin: 42px 0px;
+  color: white ;
 }
-
 .commentOne p,
 .commentTwo p,
 .commentThree p,
@@ -224,6 +230,7 @@ img {
 .commentThree .dateComments,
 .commentFour .dateComments {
   font-size: small;
+  color: black;
 } 
 .avisBottom {
   background-color: rgba(255, 255, 255, 0.5);
@@ -235,6 +242,16 @@ img {
 .starsComments {
   width: 100%;
   margin-bottom: 10px;
+}
+.containerImgComments {
+  display: flex;
+  justify-content:center ;
+  align-self: center;
+  height: 10vh;
+  width: 10vw;
+}
+.imgComments {
+  height: 10vh;
 }
 
 /*FOOTER*/
@@ -272,6 +289,7 @@ footer p {
     margin: 15px 0px;
     width: 50vw;
     height: 10vh;
+    border-bottom: 20px;
   }
   .titleIndex {
     margin-bottom: 10vh;
@@ -284,6 +302,7 @@ footer p {
     bottom: 10vh;
   }
   .avisBottom {
+    margin-top: 5vh;
     margin-bottom: 10vh;
   }
   .card-title {
@@ -293,7 +312,14 @@ footer p {
   .commentTopServeur {
     width: 100vw;
   }
-
+  /*Carousel N2*/
+  .arrows {
+    bottom: 10vh;
+  }
+  /*BULLE DE DISCUSSION*/
+  .containerImgComments{
+    display: none;
+  }
   /*Footer*/
   footer {
     height: 4vh;

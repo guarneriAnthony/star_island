@@ -1,0 +1,43 @@
+.containerGallerie {
+    margin-top: 110px;
+    height: 100vh;
+}
+.gallery {
+    max-width: 100%;
+
+}
+.gallery img {
+    max-width: 30vw;
+}
+#selectedImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#selectedImage img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .containerGallerie {
+        height: 73vh;
+        overflow: hidden;
+    }
+   .gallery {
+       max-width: 100vw;
+       height: 18rem;
+   }
+   #selectedImage img {
+    width: 80vw;
+    padding-top: 10vh;
+   }
+   .headerGalerie {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    text-align: center;
+   }
+}

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/style_header.css">
     <link rel="stylesheet" href="./css/style_index.css">
     <link rel="stylesheet" href="./css/style_sideBar.css">
+    <link rel="stylesheet" href="./css/style_galerie.css">
     
 </head>
 <body>

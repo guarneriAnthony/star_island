@@ -81,6 +81,15 @@ function handleSelection() {
       img.classList.remove("selected");
     }
   }
+/*gpt*/ 
+var selectedImage = document.getElementById(`image_${selected}`);
+
+  // Obtenez l'URL de l'image sélectionnée
+  var imageUrl = selectedImage.querySelector("img").src;
+
+  // Mettez à jour le contenu de la div selectedImage avec l'image sélectionnée
+  var selectedImageDiv = document.getElementById("selectedImage");
+  selectedImageDiv.innerHTML = `<img src="${imageUrl}" alt="Selected Image">`;
 }
 
 
@@ -100,5 +109,6 @@ if (navbarNav.classList.contains("collapsed")) {
     burger.style.backgroundColor = 'black'; 
   }   
   */
+
 
   
