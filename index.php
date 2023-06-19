@@ -12,13 +12,14 @@ require_once 'inc/header.inc.php';
     <div class="carousel-inner">
         <!--ITEM 1-->
         <div class="carousel-item active">
-            <h2>First slide label</h2>
+        <h2 class="titleIndex">Bienvenue sur <br> Star'island</h2>
             <p class="text-index">Bienvenue sur notre serveur dédié à GTA 5 ! Rejoignez notre communauté passionnée et profitez d'une expérience de jeu gratuite et captivante. <br><br>
                 Plongez dans un monde ouvert où vous pourrez simuler la vie urbaine, participer à des braquages palpitants et interagir avec une communauté active. <br><br>
                 Rejoignez-nous dès maintenant pour des moments distrayants et intenses.</p>
         </div>
         <!--ITEM 2-->
         <div class="carousel-item" id="carouselWidth">
+        <h2 class="titleIndexGalerieInside">Bienvenue sur <br> Star'island</h2>
             <div class="gallery">
                 <div id="slider" class="slider">
                 </div>
@@ -40,8 +41,9 @@ require_once 'inc/header.inc.php';
         </div>
         <!--ITEM 3-->
         <div class="carousel-item">
+        <h2 class="titleIndex">Bienvenue sur Star'island</h2>
             <section class="commentTopServeur">
-                <img class="" src="./assets/discord.png">
+                <img class="" src="./assets/topServeurCE.png">
             </section>
         </div>
     </div>
@@ -60,12 +62,13 @@ require_once 'inc/header.inc.php';
     </section>
 
 
-    <div class="card text-center" id="avisLet">
+    <div class=" text-center avisBottom">
         <div class="card-body" >
             <h5 class="card-title">Votre avis nous intéresse</h5>
             <p class="card-text"><img src="./assets/RéseauxSociaux.png"></p>
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-            <a href="#" class="btn btn-primary">Publier</a>
+            <button></button>
+            
         </div>
 
     </div>

@@ -21,6 +21,8 @@
     flex-direction: row;
     border-radius: 25px;
     width: auto;
+    padding: 0 ;
+    text-align: center;
 } 
 
 .class_discorde {
@@ -38,7 +40,10 @@
      opacity: 0 ;
 }
 
-
+#sideBar {
+    position: fixed;
+    bottom: 0;
+  }
 
 
 @media screen  and (max-width: 845px) {
