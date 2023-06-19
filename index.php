@@ -12,14 +12,14 @@ require_once 'inc/header.inc.php';
     <div class="carousel-inner">
         <!--ITEM 1-->
         <div class="carousel-item active">
-        <h2 class="titleIndex">Bienvenue sur <br> Star'island</h2>
+            <h2 class="titleIndex">Bienvenue sur <br> Star'island</h2>
             <p class="text-index">Bienvenue sur notre serveur dédié à GTA 5 ! Rejoignez notre communauté passionnée et profitez d'une expérience de jeu gratuite et captivante. <br><br>
                 Plongez dans un monde ouvert où vous pourrez simuler la vie urbaine, participer à des braquages palpitants et interagir avec une communauté active. <br><br>
                 Rejoignez-nous dès maintenant pour des moments distrayants et intenses.</p>
         </div>
         <!--ITEM 2-->
         <div class="carousel-item" id="carouselWidth">
-        <h2 class="titleIndexGalerieInside">Bienvenue sur <br> Star'island</h2>
+            <h2 class="titleIndexGalerieInside">Bienvenue sur <br> Star'island</h2>
             <div class="gallery">
                 <div id="slider" class="slider">
                 </div>
@@ -41,36 +41,49 @@ require_once 'inc/header.inc.php';
         </div>
         <!--ITEM 3-->
         <div class="carousel-item">
-        <h2 class="titleIndex">Bienvenue sur Star'island</h2>
-            <section class="commentTopServeur">
-                <img class="" src="./assets/topServeurCE.png">
+            <h2 class="titleIndex">Bienvenue sur Star'island</h2>
+            <section class="">
+                <img class="commentTopServeur" src="./assets/topServeurCE.png">
             </section>
         </div>
     </div>
 </div>
-<!--ATTENTION LE STYLE DE SIDEBAR AFFECT LINDEX-->
-<?php require_once 'inc/sideBar.php';?>
+<?php require_once 'inc/sideBar.php'; ?>
 <!--Espace commentaire du bas-->
 <div class=" container containerComments">
     <section class="commentsLeft commentsBorders">
-        <div class="commentOne commentsBordersLeft"></div>
-        <div class="commentTwo commentsBordersRight"></div>
+        <div class="commentOne commentsBordersLeft">
+            <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+            <p class="comments">Super serveur GTA RP</p>
+            <p class="dateComments">Publier le 15/02/2023</p>
+        </div>
+        <div class="commentTwo commentsBordersRight">
+        <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+            <p class="comments">Super serveur GTA RP</p>
+            <p class="dateComments">Publier le 15/02/2023</p>
+        </div>
     </section>
     <section class="commentsRight">
-        <div class="commentThree commentsBordersLeft"></div>
-        <div class="commentFour commentsBordersRight"></div>
+        <div class="commentThree commentsBordersLeft">
+        <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+            <p class="comments">Super serveur GTA RP</p>
+            <p class="dateComments">Publier le 15/02/2023</p>
+        </div>
+        <div class="commentFour commentsBordersRight">
+        <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+            <p class="comments">Super serveur GTA RP</p>
+            <p class="dateComments">Publier le 15/02/2023</p>
+        </div>
     </section>
 
 
-    <div class=" text-center avisBottom">
-        <div class="card-body" >
+    <div class="card text-center avisBottom">
+        <div class="card-body">
             <h5 class="card-title">Votre avis nous intéresse</h5>
-            <p class="card-text"><img src="./assets/RéseauxSociaux.png"></p>
+            <p class="card-text"><img src="./assets/stars.png"></p>
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-            <button></button>
-            
+            <button> Publier</button>
         </div>
-
     </div>
 
 
