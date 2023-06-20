@@ -7,6 +7,10 @@ const images = 10;
 const imagesUrl = "https://picsum.photos/seed/{seed}/500/350";
 var selected = 0;
 
+setInterval(() => {
+  nextImg();
+}, 2500);
+
 function init() {
   for (var i = 0; i < images; i++) {
     var imageWrapper = document.createElement("div");
@@ -24,31 +28,22 @@ function init() {
     gallery.appendChild(imageWrapper);
     let touchstartX = 0
     let touchendX = 0
-
-    function checkDirection() {
-        if (touchendX < touchstartX) nextImg()
-        if (touchendX > touchstartX) prevImg()
-    }
-
-    image.addEventListener('touchstart', e => {
-        touchstartX = e.changedTouches[0].screenX
-    })
-
-    image.addEventListener('touchend', e => {
-        touchendX = e.changedTouches[0].screenX
-        checkDirection()
-    })
 }
+prevAct();
 }
 
 init();
 
 right.onclick = nextImg;
 function nextImg () {
+if (selected === images - 1) {
+    selected = 0;
+} else {
 selected++;
+}
 if (selected > images - 1) {
     selected = images - 1;
-}
+} 
 handleSelection();
 }
 
@@ -81,18 +76,15 @@ function handleSelection() {
       img.classList.remove("selected");
     }
   }
-/*gpt*/ 
-var selectedImage = document.getElementById(`image_${selected}`);
+prevAct();
+}
 
-  // Obtenez l'URL de l'image sélectionnée
+function prevAct() {
+  var selectedImage = document.getElementById(`image_${selected}`);
   var imageUrl = selectedImage.querySelector("img").src;
-
-  // Mettez à jour le contenu de la div selectedImage avec l'image sélectionnée
   var selectedImageDiv = document.getElementById("selectedImage");
   selectedImageDiv.innerHTML = `<img src="${imageUrl}" alt="Selected Image">`;
 }
-
-
 
 /* animation burger pour changer la couleur (ne marche pas)*
 let navbarNav = document.getElementById("button");

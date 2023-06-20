@@ -316,6 +316,9 @@ footer p {
   .arrows {
     bottom: 10vh;
   }
+  .left ,.right  {
+    display: none;
+  }
   /*BULLE DE DISCUSSION*/
   .containerImgComments{
     display: none;
