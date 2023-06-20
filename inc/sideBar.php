@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="./css/style_sideBar.css">
+<script src="script/script.js" defer></script>
+
 <nav class="class_navBar" id="sideBar">
     <ul class="class_sidebar">
         <li class="class-li"> <a href="#"> <img src="./assets/facebook.png" class="reseaux" alt="logo-facebook"> </a></li>

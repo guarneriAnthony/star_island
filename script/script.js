@@ -1,7 +1,6 @@
 // Date d'ouverture du site (format : année, mois (0-11), jour, heure, minute, seconde)
-var siteOpeningDate = new Date(2023, 5, 30, 0, 0, 0); // Le mois est décalé de 1, donc 5 correspond à juin
-
-function updateCountdown() {
+/*var siteOpeningDate = new Date(2023, 5, 30, 0, 0, 0); // Le mois est décalé de 1, donc 5 correspond à juin
+/*function updateCountdown() {
     var currentDate = new Date();
     var timeDifference = siteOpeningDate - currentDate;
 
@@ -20,15 +19,10 @@ function updateCountdown() {
         countdownElement.innerHTML = "Le site est ouvert !"; // Message lorsque le site est ouvert
     }
 }
-
 updateCountdown();
-
-
-
-
+*/
   var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-  // Vérifier si la largeur de l'écran est inférieure à votre valeur souhaitée
   if (screenWidth > 846) {
     document.addEventListener("DOMContentLoaded", function() {
       var discordElements = document.getElementsByClassName("class_discorde");

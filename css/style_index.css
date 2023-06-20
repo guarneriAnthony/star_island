@@ -10,12 +10,14 @@
   --image-size: 500px;
 }
 body {
-  background-image: url(../assets/AdobeStock_101303147_Preview.jpeg);
+  background-image: url(../assets/nissan-gtr-gtav-5k-va.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
+#sideBar {
+  bottom: 3rem;
+}
 
 
 /* GENERAL CSS */
@@ -165,9 +167,6 @@ img {
 #carouselWidth img {
   max-width: 80vw;
 }
-.carousel-indicators {
-  margin-bottom: 6rem;
-}
 
 /*DISCUTION*/
 .commentsLeft {
@@ -281,6 +280,12 @@ footer p {
 
 /*MEDIA QUERY*/
 @media screen and (max-width: 768px) {
+  body {
+    background-image: url(../assets/los-santos-gta-v-3229.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
   .commentOne,
   .commentTwo,
   .commentThree,
@@ -311,6 +316,9 @@ footer p {
   }
   .commentTopServeur {
     width: 100vw;
+  }
+  .carousel-indicators {
+    margin-bottom: 6rem;
   }
   /*Carousel N2*/
   .arrows {

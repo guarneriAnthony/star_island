@@ -1,6 +1,7 @@
 <?php require_once 'config/function.php';
 require_once 'inc/header.inc.php';
 ?>
+<script src="script/scriptIndexjs" defer></script>
 
 
 <div id="carouselIndicators" class="carousel slide">
@@ -49,6 +50,7 @@ require_once 'inc/header.inc.php';
     </div>
 </div>
 <?php require_once 'inc/sideBar.php'; ?>
+
 <!--Espace commentaire du bas-->
 <div class=" container containerComments">
     <section class="commentsLeft commentsBorders">
@@ -100,5 +102,5 @@ require_once 'inc/header.inc.php';
 
 
 
-
+    <link rel="stylesheet" href="./css/style_index.css">
     <?php require_once 'inc/footer.inc.php'; ?>

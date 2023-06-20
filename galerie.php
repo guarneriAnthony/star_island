@@ -1,12 +1,12 @@
 <?php require_once 'config/function.php';
 require_once 'inc/header.inc.php';
 ?>
+<script src="./script/scripGalerie.js" defer></script>
 
 
 <div class="containerGallerie">
 <h2 class="headerGalerie">GALERIE</h2>
-    <div id="selectedImage">
-    </div>
+    <div id="selectedImage"></div>
     <div class="gallery">
         <div id="slider" class="slider">
         </div>
@@ -26,6 +26,7 @@ require_once 'inc/header.inc.php';
         </div>
     </div>
 </div>
-<?php require_once 'inc/sideBar.php'; ?>
 
+<?php require_once 'inc/sideBar.php'; ?>
+<link rel="stylesheet" href="./css/style_galerie.css">
 <?php require_once 'inc/footer.inc.php'; ?>

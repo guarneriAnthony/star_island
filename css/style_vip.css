@@ -1,0 +1,102 @@
+/* ALL CSS */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --image-size: 500px;
+}
+body {
+  background-image: url(../assets/gtaCar.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+main {
+    margin-top: 110px;
+}
+h2 {
+    text-align: center;
+}
+.align-middle p {
+    margin-bottom: 7rem;
+}
+
+
+#containerVip {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+#containerVip img {
+    width: 17vw;
+}
+.imgLeft {
+    display: flex;
+    align-self: end;
+}
+.imgRight {
+    display: flex;
+    align-self: start;
+}
+#contaireText {
+    align-items: center;
+    margin: 0;  
+    padding: 10rem;
+    width: 45vw;
+}
+
+#sideBar {
+    bottom: 3rem;
+}
+
+
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 6vh;
+    margin-top: 5rem;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+  }
+  .imgFooter {
+    height: 2vh;
+  }
+  footer p {
+    margin: 0 0 0 10px; 
+  }
+  .age {
+    height: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+
+
+
+  @media screen and (max-width: 768px) {
+    .delImgs {
+        display: none;
+    }
+    #containerVip {
+        height: 100%;
+        margin-top: 15vh;
+    }
+    #contaireText {
+        width: 80vw;
+        padding: 0;
+    }
+    footer {
+        margin-top: 5rem;
+    }
+    
+  }
