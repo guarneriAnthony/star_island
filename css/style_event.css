@@ -1,0 +1,73 @@
+/* ALL CSS */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --image-size: 500px;
+}
+body {
+  background-image: url(../assets/rain-drops-window-4k-ee.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+main {
+    margin-top: 110px;
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.imgLeft img {
+    width: 35vw;
+}
+.textRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60vh;
+    width: 35vw;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 6vh;
+    margin-top: 5rem;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+  }
+  .imgFooter {
+    height: 2vh;
+  }
+  footer p {
+    margin: 0 0 0 10px; 
+  }
+  .age {
+    height: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    body {
+        background-image: url(../assets/gta-v-lamborghini-in-motion-4k-8f-640x1136.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

@@ -10,7 +10,7 @@
   --image-size: 500px;
 }
 body {
-  background-image: url(../assets/gtaCar.png);
+  background-image: url(../assets/gta-v-lamborghini-in-motion-4k-8f.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -81,9 +81,15 @@ footer {
   }
 
 
-
+  
 
   @media screen and (max-width: 768px) {
+    body {
+        background-image: url(../assets/gta-v-lamborghini-in-motion-4k-8f-640x1136.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     .delImgs {
         display: none;
     }

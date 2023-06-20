@@ -43,8 +43,8 @@
                             <p class="class-text">Tutoriel</p>
                         </li>
                         <li class="nav-item item-row">
-                            <img src="./assets/vector1.png " class="imgs-nav">
-                            <p class="class-text">Event</p>
+                            <a href="./event.php"><img src="./assets/vector1.png " class="imgs-nav"></a>
+                            <a href="./event.php"><p class="class-text">Event</p></a> 
                         </li>
                     </ul>
                 </div>
