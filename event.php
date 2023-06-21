@@ -15,7 +15,8 @@ require_once 'inc/header.inc.php';
 </div>
 
 
-<?php require_once 'inc/sideBar.php'; ?>
+
 <link rel="stylesheet" href="./css/style_event.css">
 <script src="./script/scriptEvent.js"></script>
 <?php require_once 'inc/footer.inc.php'; ?>
+<?php require_once 'inc/sideBar.php'; ?>

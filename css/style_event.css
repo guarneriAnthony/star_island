@@ -23,6 +23,10 @@ main {
     align-items: center;
     justify-content: space-evenly;
 }
+
+
+/**/
+
 .imgLeft img {
     width: 35vw;
 }
@@ -36,6 +40,9 @@ main {
     text-align: center;
     font-size: 1.5rem;
 }
+#sideBar {
+    bottom: 3rem !important;
+  }
 
 /*FOOTER*/
 footer {
@@ -69,5 +76,22 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .imgLeft img {
+      width: 70vw;
+      margin-top: 5vh;
+    }
+    .textRight {
+      display: block;
+      height: 100%;
+      width: 100%;
+      font-size: 1rem;
+      margin-top: 10vh;
     }
 }

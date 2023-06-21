@@ -49,7 +49,13 @@ h2 {
     padding: 10rem;
     width: 45vw;
 }
-
+.align-middle p {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  color: black;
+  box-shadow: 5px 5px 15px 5px orangered;
+  text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+}
 #sideBar {
     bottom: 3rem;
 }

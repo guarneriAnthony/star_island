@@ -1,0 +1,23 @@
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 6vh;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+  }
+  .imgFooter {
+    height: 2vh;
+  }
+  footer p {
+    margin: 0 0 0 10px; 
+  }
+  .age {
+    height: 24px;
+    display: flex;
+    align-items: center;
+  }

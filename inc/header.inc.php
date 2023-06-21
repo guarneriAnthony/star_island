@@ -33,7 +33,7 @@
                         <a class="nav-link" href="./vip.php">Devenir VIP</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?=  BASE_PATH; ?>">Serveur</a>
+                        <a class="nav-link" href="./equipe.php">L'equipe</a>
                     </li>
                 </ul>
                 <div class="class-div">

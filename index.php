@@ -55,36 +55,38 @@ require_once 'inc/header.inc.php';
 <div class=" container containerComments">
     <section class="commentsLeft commentsBorders">
         <div class="commentOne commentsBordersLeft">
-        <div class="containerImgComments">
-            <img src="./assets/avatar.png" class="imgComments" alt="image avatar">
-        </div>
             <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+            <div class="containerImgComments">
+                <img src="./assets/hans 4.png" class="imgComments" alt="image avatar">
+            </div>
             <p class="comments">Super serveur GTA RP</p>
             <p class="dateComments">Publier le 15/02/2023</p>
         </div>
+
         <div class="commentTwo commentsBordersRight">
-        <div class="containerImgComments">
-            <img src="./assets/avatar.png" class="imgComments" alt="image avatar">
-        </div>
-        <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+            <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+            <div class="containerImgComments">
+                <img src="./assets/Souen 4.png" class="imgComments" alt="image avatar">
+            </div>
             <p class="comments">Super serveur GTA RP</p>
             <p class="dateComments">Publier le 15/02/2023</p>
         </div>
     </section>
+
     <section class="commentsRight">
         <div class="commentThree commentsBordersLeft">
-        <div class="containerImgComments">
-            <img src="./assets/avatar.png" class="imgComments" alt="image avatar">
-        </div>
-        <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+            <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+            <div class="containerImgComments">
+                <img src="./assets/charmilia 4.png" class="imgComments" alt="image avatar">
+            </div>
             <p class="comments">Super serveur GTA RP</p>
             <p class="dateComments">Publier le 15/02/2023</p>
         </div>
         <div class="commentFour commentsBordersRight">
-        <div class="containerImgComments">
-            <img src="./assets/avatar.png" class="imgComments" alt="image avatar">
-        </div>
-        <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+            <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+            <div class="containerImgComments">
+                <img src="./assets/hans 4.png" class="imgComments" alt="image avatar">
+            </div>
             <p class="comments">Super serveur GTA RP</p>
             <p class="dateComments">Publier le 15/02/2023</p>
         </div>

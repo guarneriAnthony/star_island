@@ -10,6 +10,7 @@
     </div>
 </footer>
 
+<link rel="stylesheet" href="./css/style_footer.css">
 </body>
 </html>
 

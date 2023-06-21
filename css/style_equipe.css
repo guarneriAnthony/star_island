@@ -1,0 +1,83 @@
+/* ALL CSS */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --image-size: 500px;
+}
+body {
+  background-image: url(../assets/gta_decors2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+main {
+  height: 84vh;
+}
+#sideBar {
+  bottom: 3rem;
+}
+
+
+
+
+
+h2{
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.roles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0;
+}
+.roles li {
+  list-style: none;
+  padding: 0 30px;
+  font-size: 30px;
+  border: 1px solid palevioletred;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.firstLi {
+    border-radius: 15px 0 0 15px;
+}
+.lastLi {
+    border-radius: 0 15px 15px 0;
+}
+
+
+
+
+
+.row {
+    text-align: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        height: 100%;
+    }
+  .roles {
+    flex-direction: column;
+
+  }
+  .firstLi {
+    border-radius: 15px 15px 0 0;
+}
+.lastLi {
+    border-radius: 0 0 15px 15px;
+}
+.col-2 {
+    width: 41.66666667%;
+} 
+}
