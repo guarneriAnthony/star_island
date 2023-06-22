@@ -55,18 +55,22 @@ require_once 'inc/header.inc.php';
 <div class=" container containerComments">
     <section class="commentsLeft commentsBorders">
         <div class="commentOne commentsBordersLeft">
-            <div class="containerStars">
+        <div class="containerStars">
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
             </div>
-            <div class="containerImgComments">
-                <img src="./assets/hans4.png" class="imgComments" alt="image avatar">
+            <div class="containerInterComments"><div class="containerImgComments">
+                    <img src="./assets/Souen4.png" class="imgComments" alt="image avatar">
+                </div>
+                <div class="containerTextComments">
+                    <p class="comments">Super serveur GTA RP , J'adore les maps le role play et les gens qui gèrent le serveur. Vraiment une trés bonne map je recommande à tout le monde. Le seul points négatif est que je voudrais etre membre vip sans payer </p>
+                    <p class="dateComments">Publier le 15/02/2023</p>
+                </div>
+                
             </div>
-            <p class="comments">Super serveur GTA RP</p>
-            <p class="dateComments">Publier le 15/02/2023</p>
         </div>
 
         <div class="commentTwo commentsBordersRight">
@@ -74,14 +78,18 @@ require_once 'inc/header.inc.php';
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
             </div>
-            <div class="containerImgComments">
-                <img src="./assets/Souen4.png" class="imgComments" alt="image avatar">
+            <div class="containerInterComments">
+                <div class="containerTextComments">
+                    <p class="comments">Super serveur GTA RP Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet iure ea, iusto qui voluptatibus sapiente. Earum, dolorum labore! Error pariatur est, esse beatae culpa ab excepturi laudantium modi perferendis.</p>
+                    <p class="dateComments">Publier le 15/02/2023</p>
+                </div>
+                <div class="containerImgComments">
+                    <img src="./assets/charmilia4.png" class="imgComments" alt="image avatar">
+                </div>
             </div>
-            <p class="comments">Super serveur GTA RP</p>
-            <p class="dateComments">Publier le 15/02/2023</p>
         </div>
     </section>
 
@@ -94,25 +102,34 @@ require_once 'inc/header.inc.php';
                 <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
             </div>
-            <div class="containerImgComments">
-                <img src="./assets/charmilia4.png" class="imgComments" alt="image avatar">
+            <div class="containerInterComments"><div class="containerImgComments">
+                    <img src="./assets/Souen4.png" class="imgComments" alt="image avatar">
+                </div>
+                <div class="containerTextComments">
+                    <p class="comments">Serveur GTA RP trop nul, les soldat sont pas à pied. Ils y a trop de singe sur les montagnes et encore pire les modo mon ban parceque j'ai que 17 ans ete demi alors que jes des poils au menton</p>
+                    <p class="dateComments">Publier le 15/02/2023</p>
+                </div>
+                
             </div>
-            <p class="comments">Super serveur GTA RP</p>
-            <p class="dateComments">Publier le 15/02/2023</p>
         </div>
+
         <div class="commentFour commentsBordersRight">
-        <div class="containerStars">
+            <div class="containerStars">
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
             </div>
-            <div class="containerImgComments">
-                <img src="./assets/hans4.png" class="imgComments" alt="image avatar">
+            <div class="containerInterComments">
+                <div class="containerTextComments">
+                    <p class="comments">Génial le serveur FiveM StarIsland, j'ai jouer le role d'un chauffeur de taxis alors que dans la vie je suis un chauffeur de bus. En vrai cest trop bien de pouvoir changer de metier dans un jeu.</p>
+                    <p class="dateComments">Publier le 15/02/2023</p>
+                </div>
+                <div class="containerImgComments">
+                    <img src="./assets/hans4.png" class="imgComments" alt="image avatar">
+                </div>
             </div>
-            <p class="comments">Super serveur GTA RP</p>
-            <p class="dateComments">Publier le 15/02/2023</p>
         </div>
     </section>
 
@@ -121,11 +138,11 @@ require_once 'inc/header.inc.php';
         <div class="card-body">
             <h5 class="card-title">Votre avis nous intéresse</h5>
             <div class="containerStars">
-                <img src="./assets/starBlack.png" class="imgComments changeStar"  alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar"  alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar"  alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar"  alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar"  alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star0" alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star1" alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star2" alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star3" alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star4" alt="image etoile"></img>
             </div>
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
             <button> Publier</button>

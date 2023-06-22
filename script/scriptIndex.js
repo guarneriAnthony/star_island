@@ -1,4 +1,3 @@
- 
 const gallery = document.getElementById("slider");
 const left = document.getElementsByClassName("left")[0];
 left.classList.add("disabled");
@@ -25,33 +24,33 @@ function init() {
     );
     imageWrapper.appendChild(image);
     gallery.appendChild(imageWrapper);
-    let touchstartX = 0
-    let touchendX = 0
-}
+    let touchstartX = 0;
+    let touchendX = 0;
+  }
 }
 
 init();
 
 right.onclick = nextImg;
-function nextImg () {
-if (selected === images - 1) {
+function nextImg() {
+  if (selected === images - 1) {
     selected = 0;
-} else {
-selected++;
-}
-if (selected > images - 1) {
+  } else {
+    selected++;
+  }
+  if (selected > images - 1) {
     selected = images - 1;
-} 
-handleSelection();
+  }
+  handleSelection();
 }
 
 left.onclick = prevImg;
-function prevImg () {
-selected--;
-if (selected < 0) {
+function prevImg() {
+  selected--;
+  if (selected < 0) {
     selected = 0;
-}
-handleSelection();
+  }
+  handleSelection();
 }
 
 function handleSelection() {
@@ -77,21 +76,130 @@ function handleSelection() {
 }
 
 let changeStars = document.querySelectorAll(".changeStar");
-let starsValue = 0;
+let star0 = document.querySelector(".star0");
+let star1 = document.querySelector(".star1");
+let star2 = document.querySelector(".star2");
+let star3 = document.querySelector(".star3");
+let star4 = document.querySelector(".star4");
 
-changeStars.forEach(changeStar => {
+changeStars.forEach((changeStar) => {
   changeStar.addEventListener("click", () => {
-    if (changeStar.src === "http://localhost/PHP/star_island/assets/starBlack.png") {
-      changeStar.src = "./assets/star.png";
-      starsValue--;
+    if (
+      changeStar.classList.contains("star0") &&
+      changeStar.src.endsWith("starBlack.png")
+    ) {
+      star0.src = "./assets/star.png";
+    } else if (
+      changeStar.classList.contains("star1") &&
+      changeStar.src.endsWith("starBlack.png")
+    ) {
+      star0.src = "./assets/star.png";
+      star1.src = "./assets/star.png";
+    } else if (
+      changeStar.classList.contains("star2") &&
+      changeStar.src.endsWith("starBlack.png")
+    ) {
+      star0.src = "./assets/star.png";
+      star1.src = "./assets/star.png";
+      star2.src = "./assets/star.png";
+    } else if (
+      changeStar.classList.contains("star3") &&
+      changeStar.src.endsWith("starBlack.png")
+    ) {
+      star0.src = "./assets/star.png";
+      star1.src = "./assets/star.png";
+      star2.src = "./assets/star.png";
+      star3.src = "./assets/star.png";
+    } else if (
+      changeStar.classList.contains("star4") &&
+      changeStar.src.endsWith("starBlack.png")
+    ) {
+      star0.src = "./assets/star.png";
+      star1.src = "./assets/star.png";
+      star2.src = "./assets/star.png";
+      star3.src = "./assets/star.png";
+      star4.src = "./assets/star.png";
     } else {
-      changeStar.src = "./assets/starBlack.png";
-      starsValue++;
+      if (
+        changeStar.classList.contains("star0") &&
+        changeStar.src.endsWith("star.png")
+      ) {
+        star1.src = "./assets/starBlack.png";
+        star2.src = "./assets/starBlack.png";
+        star3.src = "./assets/starBlack.png";
+        star4.src = "./assets/starBlack.png";
+      } else if (
+        changeStar.classList.contains("star1") &&
+        changeStar.src.endsWith("star.png")
+      ) {
+        star2.src = "./assets/starBlack.png";
+        star3.src = "./assets/starBlack.png";
+        star4.src = "./assets/starBlack.png";
+      } else if (
+        changeStar.classList.contains("star2") &&
+        changeStar.src.endsWith("star.png")
+      ) {
+        star3.src = "./assets/starBlack.png";
+        star4.src = "./assets/starBlack.png";
+      } else if (
+        changeStar.classList.contains("star3") &&
+        changeStar.src.endsWith("star.png")
+      ) {
+        star4.src = "./assets/starBlack.png";
+      }
     }
   });
 });
-/*Les starsValue ne change pas comme je le voudrais, surment du selectorAll*/ 
+
+/* Optimisation du code mais ne marche que pour afficher les etoiles en validé et non plas pour les supprimer correctement */
+/*let changeStars = document.querySelectorAll(".changeStar");
+let stars = document.querySelectorAll(".star");
+
+changeStars.forEach(changeStar => {
+  changeStar.addEventListener("click", () => {
+    let clickedIndex = Array.from(changeStars).indexOf(changeStar);
 
 
+    let changeStars0 = document.querySelectorAll(".changeStar");
+let star0 = document.querySelector(".star0");
+let star1 = document.querySelector(".star1");
+let star2 = document.querySelector(".star2");
+let star3 = document.querySelector(".star3");
+let star4 = document.querySelector(".star4");
 
-  
+
+    stars.forEach((star, index) => {
+      if (index <= clickedIndex) {
+        if (changeStar.src.endsWith("starBlack.png")) {
+          star.src = "./assets/star.png";
+        } else 
+        {
+          changeStars0.forEach(changeStar => {
+            console.log("changé");
+            if (changeStar.classList.contains("star0") && changeStar.src.endsWith("star.png")) {
+              star1.src = "./assets/starBlack.png";
+              star2.src = "./assets/starBlack.png";
+              star3.src = "./assets/starBlack.png";
+              star4.src = "./assets/starBlack.png";
+            } 
+            else if (changeStar.classList.contains("star1") && changeStar.src.endsWith("star.png")) {
+              star2.src = "./assets/starBlack.png";
+              star3.src = "./assets/starBlack.png";
+              star4.src = "./assets/starBlack.png";
+            } 
+            else if (changeStar.classList.contains("star2") && changeStar.src.endsWith("star.png")) {
+              star3.src = "./assets/starBlack.png";
+              star4.src = "./assets/starBlack.png";
+            }
+            else if (changeStar.classList.contains("star3") && changeStar.src.endsWith("star.png")) {
+              star4.src = "./assets/starBlack.png";
+            }
+          });
+          
+    
+        }
+      }
+    });
+  });
+});
+*/
