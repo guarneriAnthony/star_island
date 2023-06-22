@@ -76,6 +76,21 @@ function handleSelection() {
   }
 }
 
+let changeStars = document.querySelectorAll(".changeStar");
+let starsValue = 0;
+
+changeStars.forEach(changeStar => {
+  changeStar.addEventListener("click", () => {
+    if (changeStar.src === "http://localhost/PHP/star_island/assets/starBlack.png") {
+      changeStar.src = "./assets/star.png";
+      starsValue--;
+    } else {
+      changeStar.src = "./assets/starBlack.png";
+      starsValue++;
+    }
+  });
+});
+/*Les starsValue ne change pas comme je le voudrais, surment du selectorAll*/ 
 
 
 

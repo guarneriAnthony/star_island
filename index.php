@@ -55,7 +55,13 @@ require_once 'inc/header.inc.php';
 <div class=" container containerComments">
     <section class="commentsLeft commentsBorders">
         <div class="commentOne commentsBordersLeft">
-            <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+            <div class="containerStars">
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
+            </div>
             <div class="containerImgComments">
                 <img src="./assets/hans4.png" class="imgComments" alt="image avatar">
             </div>
@@ -64,7 +70,13 @@ require_once 'inc/header.inc.php';
         </div>
 
         <div class="commentTwo commentsBordersRight">
-            <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+        <div class="containerStars">
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
+            </div>
             <div class="containerImgComments">
                 <img src="./assets/Souen4.png" class="imgComments" alt="image avatar">
             </div>
@@ -75,7 +87,13 @@ require_once 'inc/header.inc.php';
 
     <section class="commentsRight">
         <div class="commentThree commentsBordersLeft">
-            <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+        <div class="containerStars">
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
+            </div>
             <div class="containerImgComments">
                 <img src="./assets/charmilia4.png" class="imgComments" alt="image avatar">
             </div>
@@ -83,7 +101,13 @@ require_once 'inc/header.inc.php';
             <p class="dateComments">Publier le 15/02/2023</p>
         </div>
         <div class="commentFour commentsBordersRight">
-            <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
+        <div class="containerStars">
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+            </div>
             <div class="containerImgComments">
                 <img src="./assets/hans4.png" class="imgComments" alt="image avatar">
             </div>
@@ -96,7 +120,13 @@ require_once 'inc/header.inc.php';
     <div class="card text-center avisBottom">
         <div class="card-body">
             <h5 class="card-title">Votre avis nous intéresse</h5>
-            <p class="card-text"><img src="./assets/stars.png"></p>
+            <div class="containerStars">
+                <img src="./assets/starBlack.png" class="imgComments changeStar"  alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar"  alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar"  alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar"  alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar"  alt="image etoile"></img>
+            </div>
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
             <button> Publier</button>
         </div>
