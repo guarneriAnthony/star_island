@@ -21,7 +21,7 @@ a {
 }
 
 .nav-item{
-    margin-right: 6rem ;
+    margin-left: 6rem ;
     display: flex;
     align-items: center;
 }
@@ -35,7 +35,14 @@ a {
     margin: 0 1rem 0 2rem;
     color: white;
 }
-
+ .class-ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .firstItem, .secondItem {
+    margin-top: 20px;
+ }
 
 #navbarHeader {
     position: fixed;
@@ -66,6 +73,7 @@ a {
     }
     .nav-item{
         justify-content: end !important;
+        margin-left: 0 !important;
         margin-right: 0 !important;
     }
     .nav-item .class-text {

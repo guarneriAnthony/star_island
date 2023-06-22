@@ -1,7 +1,7 @@
 <?php require_once 'config/function.php';
 require_once 'inc/header.inc.php';
 ?>
-<script src="script/scriptIndexjs" defer></script>
+<script src="script/scriptIndex.js" defer></script>
 
 
 <div id="carouselIndicators" class="carousel slide">
@@ -14,7 +14,7 @@ require_once 'inc/header.inc.php';
         <!--ITEM 1-->
         <div class="carousel-item active">
             <h2 class="titleIndex">Bienvenue sur <br> Star'island</h2>
-            <p class="text-index">Bienvenue sur notre serveur dédié à GTA 5 ! Rejoignez notre communauté passionnée et profitez d'une expérience de jeu gratuite et captivante. <br><br>
+            <p class="text-index">Bienvenue sur notre serveur dédié à FiveM ! Rejoignez notre communauté passionnée et profitez d'une expérience de jeu gratuite et captivante. <br><br>
                 Plongez dans un monde ouvert où vous pourrez simuler la vie urbaine, participer à des braquages palpitants et interagir avec une communauté active. <br><br>
                 Rejoignez-nous dès maintenant pour des moments distrayants et intenses.</p>
         </div>
@@ -57,7 +57,7 @@ require_once 'inc/header.inc.php';
         <div class="commentOne commentsBordersLeft">
             <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
             <div class="containerImgComments">
-                <img src="./assets/hans 4.png" class="imgComments" alt="image avatar">
+                <img src="./assets/hans4.png" class="imgComments" alt="image avatar">
             </div>
             <p class="comments">Super serveur GTA RP</p>
             <p class="dateComments">Publier le 15/02/2023</p>
@@ -66,7 +66,7 @@ require_once 'inc/header.inc.php';
         <div class="commentTwo commentsBordersRight">
             <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
             <div class="containerImgComments">
-                <img src="./assets/Souen 4.png" class="imgComments" alt="image avatar">
+                <img src="./assets/Souen4.png" class="imgComments" alt="image avatar">
             </div>
             <p class="comments">Super serveur GTA RP</p>
             <p class="dateComments">Publier le 15/02/2023</p>
@@ -77,7 +77,7 @@ require_once 'inc/header.inc.php';
         <div class="commentThree commentsBordersLeft">
             <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
             <div class="containerImgComments">
-                <img src="./assets/charmilia 4.png" class="imgComments" alt="image avatar">
+                <img src="./assets/charmilia4.png" class="imgComments" alt="image avatar">
             </div>
             <p class="comments">Super serveur GTA RP</p>
             <p class="dateComments">Publier le 15/02/2023</p>
@@ -85,7 +85,7 @@ require_once 'inc/header.inc.php';
         <div class="commentFour commentsBordersRight">
             <img src="./assets/stars.png" class="starsComments" alt="image detoiles">
             <div class="containerImgComments">
-                <img src="./assets/hans 4.png" class="imgComments" alt="image avatar">
+                <img src="./assets/hans4.png" class="imgComments" alt="image avatar">
             </div>
             <p class="comments">Super serveur GTA RP</p>
             <p class="dateComments">Publier le 15/02/2023</p>

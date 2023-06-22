@@ -15,27 +15,60 @@ require_once 'inc/header.inc.php';
 <div class="container">
     <div class="row">
         <div class="col-2">
-            <img src="./assets/hans 4.png" alt="avatar" class="imgAvatar">
+            <img src="./assets/hans4.png" alt="avatar" id="" class="myImage">
             <p>Admin</p>
-            <p>Name</p>
+            <p>Name</p>   
         </div>
         <div class="col-2" >
-            <img src="./assets/Souen 4.png" alt="avatar">
+            <img src="./assets/Souen4.png" alt="avatar" class="myImage">
             <p>Modo</p>
             <p>Name</p>
         </div>
         <div class="col-2">
-            <img src="./assets/hans 4.png" alt="avatar">
+            <img src="./assets/hans4.png" alt="avatar" class="myImage">
             <p>Modo</p>
             <p>Name</p>
         </div>
         <div class="col-2">
-            <img src="./assets/charmilia 4.png" alt="avatar">
+            <img src="./assets/charmilia4.png" alt="avatar" class="myImage">
             <p>developpeur</p>
             <p>Name</p>
         </div>
         <div class="col-2">
-            <img src="./assets/hans 4.png" alt="avatar">
+            <img src="./assets/hans4.png" alt="avatar" class="myImage">
+            <p>mappeur , modo</p>
+            <p>Name</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <img src="./assets/hans4.png" alt="avatar" class="myImage">
+            <p>mappeur</p>
+            <p>Name</p>
+        </div>
+        <div class="col-2">
+            <img src="./assets/Souen4.png" alt="avatar" class="myImage">
+            <p>developpeur</p>
+            <p>Name</p>
+        </div>
+        <div class="col-2">
+            <img src="./assets/hans4.png" alt="avatar" class="myImage">
+            <p>Helper</p>
+            <p>Name</p>
+        </div>
+        <div class="col-2">
+            <img src="./assets/charmilia4.png" alt="avatar" class="myImage">
+            <p>Modo</p>
+            <p>Name</p>
+        </div>
+        <div class="col-2">
+            <img src="./assets/hans4.png" alt="avatar" class="myImage">
+            <p>developpeur</p>
+            <p>Name</p>
+        </div>
+        <div class="col-2">
+            <img src="./assets/Souen4.png" alt="avatar" class="myImage">
             <p>mappeur</p>
             <p>Name</p>
         </div>
@@ -43,60 +76,27 @@ require_once 'inc/header.inc.php';
 
     <div class="row">
         <div class="col-2">
-            <img src="./assets/hans 4.png" alt="avatar">
-            <p>mappeur</p>
-            <p>Name</p>
-        </div>
-        <div class="col-2">
-            <img src="./assets/Souen 4.png" alt="avatar">
-            <p>developpeur</p>
-            <p>Name</p>
-        </div>
-        <div class="col-2">
-            <img src="./assets/hans 4.png" alt="avatar">
+            <img src="./assets/hans4.png" alt="avatar" class="myImage">
             <p>Helper</p>
             <p>Name</p>
         </div>
         <div class="col-2">
-            <img src="./assets/charmilia 4.png" alt="avatar">
-            <p>Helper</p>
-            <p>Name</p>
-        </div>
-        <div class="col-2">
-            <img src="./assets/hans 4.png" alt="avatar">
+            <img src="./assets/Souen4.png" alt="avatar" class="myImage">
             <p>developpeur</p>
             <p>Name</p>
         </div>
         <div class="col-2">
-            <img src="./assets/Souen 4.png" alt="avatar">
-            <p>mappeur</p>
-            <p>Name</p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-2">
-            <img src="./assets/hans 4.png" alt="avatar">
-            <p>Helper</p>
-            <p>Name</p>
-        </div>
-        <div class="col-2">
-            <img src="./assets/Souen 4.png" alt="avatar">
-            <p>developpeur</p>
-            <p>Name</p>
-        </div>
-        <div class="col-2">
-            <img src="./assets/hans 4.png" alt="avatar">
+            <img src="./assets/hans4.png" alt="avatar" class="myImage">
             <p>admin</p>
             <p>Name</p>
         </div>
         <div class="col-2">
-            <img src="./assets/charmilia 4.png" alt="avatar">
+            <img src="./assets/charmilia4.png" alt="avatar" class="myImage"> 
             <p>mappeur</p>
             <p>Name</p>
         </div>
         <div class="col-2">
-            <img src="./assets/hans 4.png" alt="avatar">
+            <img src="./assets/hans4.png" alt="avatar" class="myImage">
             <p>developpeur</p>
             <p>Name</p>
         </div>

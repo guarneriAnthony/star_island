@@ -7,7 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Page Index</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script>
+    <script src="./script/bootstrap.min.js" defer></script>
     <link rel="stylesheet" href="./css/style_bootstrap.css"/>
     <link rel="stylesheet" href="./css/style_header.css">
         
@@ -36,13 +36,13 @@
                         <a class="nav-link" href="./equipe.php">L'equipe</a>
                     </li>
                 </ul>
-                <div class="class-div">
+                <div class="class-div containerItems">
                     <ul class="class-ul">
-                        <li class="nav-item item-row">
+                        <li class="nav-item item-row firstItem">
                             <img src="./assets/vector.png" class="imgs-nav">
                             <p class="class-text">Tutoriel</p>
                         </li>
-                        <li class="nav-item item-row">
+                        <li class="nav-item item-row secondItem">
                             <a href="./event.php"><img src="./assets/vector1.png " class="imgs-nav"></a>
                             <a href="./event.php"><p class="class-text">Event</p></a> 
                         </li>
@@ -52,18 +52,6 @@
         </div>
     </nav>
 </header>
+
 <main >
 
-<?php 
-
-if (isset($_SESSION['messages']) && !empty($_SESSION['messages'])) :
-    foreach ($_SESSION['messages'] as $type => $messages) :
-        foreach ($messages as $key => $message) :  ?>
-            <div class="alert alert-<?= $type; ?> text-center w-50 mx-auto">
-            <p><?= $message; ?></p>
-            </div>
-        <?php unset($_SESSION['messages'][$type][$key]); 
-        endforeach;
-    endforeach;
-endif;
-?>
