@@ -18,11 +18,22 @@ body {
 #sideBar {
   bottom: 3rem;
 }
-
+h2 {
+  font-size: 4rem;
+  text-decoration: underline;
+  margin-bottom: 35px;
+}
+.titleIndexGalerieInside{
+  text-align: center;
+}
 
 /* GENERAL CSS */
-.titleIndex, .text-index {
+.titleIndex,
+.text-index {
   text-align: center;
+}
+.textIndex {
+  font-size: 1.5rem;
 }
 .carousel-item.active {
   display: flex;
@@ -215,7 +226,8 @@ img {
   align-items: center;
   justify-content: space-between;
   margin: 42px 0px;
-  color: white ;
+  color: white;
+  height: 25vh;
 }
 .commentOne p,
 .commentTwo p,
@@ -223,17 +235,23 @@ img {
 .commentFour p {
   margin: 0;
   padding: 0;
-} 
+}
 .commentOne .dateComments,
 .commentTwo .dateComments,
 .commentThree .dateComments,
 .commentFour .dateComments {
   font-size: small;
+  color: white;
+  margin-top: 5px;
   color: black;
-} 
+  font-weight: bold;
+}
 .avisBottom {
   background-color: rgba(255, 255, 255, 0.5);
   color: black;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  border-radius: 50px;
 }
 .comments {
   margin: 0;
@@ -244,7 +262,7 @@ img {
 }
 .containerImgComments {
   display: flex;
-  justify-content:center ;
+  justify-content: center;
   align-self: center;
   height: 10vh;
   width: 10vw;
@@ -255,13 +273,13 @@ img {
 .containerImgComments .imgComments {
   height: 10vh;
 }
-.containerStars{
+.containerStars {
   width: 100%;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 24px;
 }
 .containerInterComments {
   width: 100%;
@@ -271,11 +289,24 @@ margin-top: 5px;
   align-items: center;
 }
 .containerTextComments {
-
   display: flex;
   flex-direction: column;
+  margin: 5px 5px;
 }
+h5 {
+  font-size: 35px;
+  font-weight: bold;
+}
+.formIndex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
+}
+.form-floating {
+  width: 75%;
+}
 
 /*FOOTER*/
 footer {
@@ -294,13 +325,47 @@ footer {
   height: 2vh;
 }
 footer p {
-  margin: 0 0 0 10px; 
+  margin: 0 0 0 10px;
 }
 .age {
   height: 50px;
   display: flex;
   align-items: center;
 }
+.button-46 {
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #DFDFDF;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 28px;
+  max-width: 15%;
+  padding: 14px 22px;
+  text-decoration: none;
+  transition: all .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.button-46:active,
+.button-46:hover {
+  outline: 0;
+}
+
+.button-46:hover {
+  background-color: #FFFFFF;
+  border-color: rgba(0, 0, 0, 0.19);
+}
+
 
 /*MEDIA QUERY*/
 @media screen and (max-width: 768px) {
@@ -309,7 +374,13 @@ footer p {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
+  }
+  h2 {
+      font-size: 2rem;
+  }
+  .item2 {
+    margin: 60px 0 0 0;
+  }
   .commentOne,
   .commentTwo,
   .commentThree,
@@ -317,8 +388,12 @@ footer p {
     align-self: center;
     margin: 15px 0px;
     width: 50vw;
-    height: 10vh;
+    height: 30vh;
     border-bottom: 20px;
+    overflow: hidden;
+  }
+  .textIndex {
+    font-size: 1rem;
   }
   .titleIndex {
     margin-bottom: 10vh;
@@ -328,11 +403,7 @@ footer p {
     text-align: center;
   }
   .carousel-indicators {
-    bottom: 10vh;
-  }
-  .avisBottom {
-    margin-top: 5vh;
-    margin-bottom: 10vh;
+    bottom: 4vh;
   }
   .card-title {
     color: black;
@@ -348,15 +419,30 @@ footer p {
   .arrows {
     bottom: 10vh;
   }
-  .left ,.right  {
+  .left,
+  .right {
     display: none;
   }
   /*BULLE DE DISCUSSION*/
-  .containerImgComments{
+  .containerImgComments {
     display: none;
   }
   .imgComments {
     height: 3vh;
+  }
+  .containerTextComments p {
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+  }
+  .dateComments {
+    color: #fff;
+    font-weight: bold;
+  }
+  .button-46 {
+    font-size: 20px;
+    min-width: 200px;
+    padding: 14px 16px;
   }
   /*Footer*/
   footer {

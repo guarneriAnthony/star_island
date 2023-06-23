@@ -14,13 +14,13 @@ require_once 'inc/header.inc.php';
         <!--ITEM 1-->
         <div class="carousel-item active">
             <h2 class="titleIndex">Bienvenue sur <br> Star'island</h2>
-            <p class="text-index">Bienvenue sur notre serveur dédié à FiveM ! Rejoignez notre communauté passionnée et profitez d'une expérience de jeu gratuite et captivante. <br><br>
+            <p class="text-index textIndex">Bienvenue sur notre serveur dédié à FiveM ! Rejoignez notre communauté passionnée et profitez d'une expérience de jeu gratuite et captivante. <br><br>
                 Plongez dans un monde ouvert où vous pourrez simuler la vie urbaine, participer à des braquages palpitants et interagir avec une communauté active. <br><br>
                 Rejoignez-nous dès maintenant pour des moments distrayants et intenses.</p>
         </div>
         <!--ITEM 2-->
         <div class="carousel-item" id="carouselWidth">
-            <h2 class="titleIndexGalerieInside">Bienvenue sur <br> Star'island</h2>
+            <h2 class="titleIndexGalerieInside item2">Bienvenue sur <br> Star'island</h2>
             <div class="gallery">
                 <div id="slider" class="slider">
                 </div>
@@ -42,7 +42,7 @@ require_once 'inc/header.inc.php';
         </div>
         <!--ITEM 3-->
         <div class="carousel-item">
-            <h2 class="titleIndex">Bienvenue sur Star'island</h2>
+            <h2 class="titleIndex">Bienvenue sur <br> Star'island</h2>
             <section class="">
                 <img class="commentTopServeur" src="./assets/topServeurCE.png">
             </section>
@@ -55,26 +55,27 @@ require_once 'inc/header.inc.php';
 <div class=" container containerComments">
     <section class="commentsLeft commentsBorders">
         <div class="commentOne commentsBordersLeft">
-        <div class="containerStars">
+            <div class="containerStars">
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
             </div>
-            <div class="containerInterComments"><div class="containerImgComments">
+            <div class="containerInterComments">
+                <div class="containerImgComments">
                     <img src="./assets/Souen4.png" class="imgComments" alt="image avatar">
                 </div>
                 <div class="containerTextComments">
                     <p class="comments">Super serveur GTA RP , J'adore les maps le role play et les gens qui gèrent le serveur. Vraiment une trés bonne map je recommande à tout le monde. Le seul points négatif est que je voudrais etre membre vip sans payer </p>
                     <p class="dateComments">Publier le 15/02/2023</p>
                 </div>
-                
+
             </div>
         </div>
 
         <div class="commentTwo commentsBordersRight">
-        <div class="containerStars">
+            <div class="containerStars">
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
@@ -95,21 +96,22 @@ require_once 'inc/header.inc.php';
 
     <section class="commentsRight">
         <div class="commentThree commentsBordersLeft">
-        <div class="containerStars">
+            <div class="containerStars">
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
             </div>
-            <div class="containerInterComments"><div class="containerImgComments">
+            <div class="containerInterComments">
+                <div class="containerImgComments">
                     <img src="./assets/Souen4.png" class="imgComments" alt="image avatar">
                 </div>
                 <div class="containerTextComments">
                     <p class="comments">Serveur GTA RP trop nul, les soldat sont pas à pied. Ils y a trop de singe sur les montagnes et encore pire les modo mon ban parceque j'ai que 17 ans ete demi alors que jes des poils au menton</p>
                     <p class="dateComments">Publier le 15/02/2023</p>
                 </div>
-                
+
             </div>
         </div>
 
@@ -135,7 +137,7 @@ require_once 'inc/header.inc.php';
 
 
     <div class="card text-center avisBottom">
-        <div class="card-body">
+        <div class="card-body formIndex">
             <h5 class="card-title">Votre avis nous intéresse</h5>
             <div class="containerStars">
                 <img src="./assets/starBlack.png" class="imgComments changeStar star0" alt="image etoile"></img>
@@ -144,8 +146,11 @@ require_once 'inc/header.inc.php';
                 <img src="./assets/starBlack.png" class="imgComments changeStar star3" alt="image etoile"></img>
                 <img src="./assets/starBlack.png" class="imgComments changeStar star4" alt="image etoile"></img>
             </div>
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-            <button> Publier</button>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Ecrivez votre commentaire :</label>
+            </div>
+            <button class="button-46" role="button">Publier</button>
         </div>
     </div>
 
@@ -153,3 +158,4 @@ require_once 'inc/header.inc.php';
 
     <link rel="stylesheet" href="./css/style_index.css">
     <?php require_once 'inc/footer.inc.php'; ?>
+

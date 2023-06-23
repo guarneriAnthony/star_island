@@ -160,7 +160,7 @@ changeStars.forEach(changeStar => {
     let clickedIndex = Array.from(changeStars).indexOf(changeStar);
 
 
-    let changeStars0 = document.querySelectorAll(".changeStar");
+let changeStars0 = document.querySelectorAll(".changeStar");
 let star0 = document.querySelector(".star0");
 let star1 = document.querySelector(".star1");
 let star2 = document.querySelector(".star2");

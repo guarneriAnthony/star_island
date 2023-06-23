@@ -40,7 +40,8 @@
                     <ul class="class-ul">
                         <li class="nav-item item-row firstItem">
                             <img src="./assets/vector.png" class="imgs-nav">
-                            <p class="class-text">Tutoriel</p>
+                            
+                            <a href="https://fivem.net/"> <p class="class-text">Tutoriel</p></a>
                         </li>
                         <li class="nav-item item-row secondItem">
                             <a href="./event.php"><img src="./assets/vector1.png " class="imgs-nav"></a>
