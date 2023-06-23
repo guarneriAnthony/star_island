@@ -10,7 +10,6 @@
     <script src="./script/bootstrap.min.js" defer></script>
     <link rel="stylesheet" href="./css/style_bootstrap.css"/>
     <link rel="stylesheet" href="./css/style_header.css">
-        
 </head>
 <body>
 <header>

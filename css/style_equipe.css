@@ -21,10 +21,17 @@ main {
 #sideBar {
   bottom: 3rem;
 }
-
+a {
+  color: white;
+}
 h2 {
   text-align: center;
   margin-top: 20vh;
+}
+.class-navBar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .roles {
@@ -57,6 +64,18 @@ h2 {
 .row {
   text-align: center;
   justify-content: center;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+}
+.dropdown-item {
+  color: black;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
