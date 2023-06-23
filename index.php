@@ -44,15 +44,18 @@ require_once 'inc/header.inc.php';
         <div class="carousel-item">
             <h2 class="titleIndex">Bienvenue sur <br> Star'island</h2>
             <section class="">
-                <img class="commentTopServeur" src="./assets/topServeurCE.png">
+                <img class="commentTopServeur" alt="image en attente de api top serveur" src="./assets/topServeurCE.png">
             </section>
         </div>
     </div>
 </div>
+
+<!--INCLUDE SIDEBAR DISCORD-->
 <?php require_once 'inc/sideBar.php'; ?>
 
-<!--Espace commentaire du bas-->
+<!--COMMENT SECTION BELOW-->
 <div class=" container containerComments">
+    <!--COMMENTS LEFT-->
     <section class="commentsLeft commentsBorders">
         <div class="commentOne commentsBordersLeft">
             <div class="containerStars">
@@ -93,7 +96,7 @@ require_once 'inc/header.inc.php';
             </div>
         </div>
     </section>
-
+    <!--COMMENTS RIGHT-->
     <section class="commentsRight">
         <div class="commentThree commentsBordersLeft">
             <div class="containerStars">
@@ -135,7 +138,7 @@ require_once 'inc/header.inc.php';
         </div>
     </section>
 
-
+    <!--CARD TO LET ONE NOTICE  -->
     <div class="card text-center avisBottom">
         <div class="card-body formIndex">
             <h5 class="card-title">Votre avis nous intéresse</h5>
@@ -150,7 +153,7 @@ require_once 'inc/header.inc.php';
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                 <label for="floatingTextarea2">Ecrivez votre commentaire :</label>
             </div>
-            <button class="button-46" role="button">Publier</button>
+            <button class="button-46">Publier</button>
         </div>
     </div>
 
@@ -158,4 +161,3 @@ require_once 'inc/header.inc.php';
 
     <link rel="stylesheet" href="./css/style_index.css">
     <?php require_once 'inc/footer.inc.php'; ?>
-

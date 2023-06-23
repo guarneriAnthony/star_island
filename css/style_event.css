@@ -9,6 +9,9 @@
 :root {
   --image-size: 500px;
 }
+
+
+/*GLOBAL CSS*/
 body {
   background-image: url(../assets/rain-drops-window-4k-ee.jpg);
   background-size: cover;
@@ -25,8 +28,7 @@ main {
 }
 
 
-/**/
-
+/*CLASS, ID*/
 .imgLeft img {
     width: 35vw;
 }
@@ -43,6 +45,8 @@ main {
 #sideBar {
     bottom: 3rem !important;
   }
+
+
 
 /*FOOTER*/
 footer {
@@ -69,7 +73,7 @@ footer {
     align-items: center;
   }
 
-
+/*MEDIA QUERY*/
   @media screen and (max-width: 768px) {
     body {
         background-image: url(../assets/gta-v-lamborghini-in-motion-4k-8f-640x1136.jpg);

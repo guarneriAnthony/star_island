@@ -1,4 +1,3 @@
-
 const gallery = document.getElementById("slider");
 const left = document.getElementsByClassName("left")[0];
 
@@ -11,6 +10,7 @@ setInterval(() => {
   nextImg();
 }, 2500);
 
+/*INIT OF WRAPPER AND IMG IN HTML*/
 function init() {
   for (var i = 0; i < images; i++) {
     var imageWrapper = document.createElement("div");
@@ -26,36 +26,38 @@ function init() {
     );
     imageWrapper.appendChild(image);
     gallery.appendChild(imageWrapper);
-    let touchstartX = 0
-    let touchendX = 0
+    let touchstartX = 0;
+    let touchendX = 0;
+  }
+  prevAct();
 }
-prevAct();
-}
-
 init();
 
+/*CLICK TO CHANGE SELECTED IMG (RIGHT)*/
 right.onclick = nextImg;
-function nextImg () {
-if (selected === images - 1) {
+function nextImg() {
+  if (selected === images - 1) {
     selected = 0;
-} else {
-selected++;
-}
-if (selected > images - 1) {
+  } else {
+    selected++;
+  }
+  if (selected > images - 1) {
     selected = images - 1;
-} 
-handleSelection();
+  }
+  handleSelection();
 }
 
+/*CLICK TO CHANGE SELECTED IMG (LEFT)*/
 left.onclick = prevImg;
-function prevImg () {
-selected--;
-if (selected < 0) {
+function prevImg() {
+  selected--;
+  if (selected < 0) {
     selected = 0;
-}
-handleSelection();
+  }
+  handleSelection();
 }
 
+/*TO HANDLE THE SELECTION OF IMG*/
 function handleSelection() {
   var images = document.getElementsByClassName("wrapper");
   if (selected === images.length - 1) {
@@ -76,7 +78,7 @@ function handleSelection() {
       img.classList.remove("selected");
     }
   }
-prevAct();
+  prevAct();
 }
 
 function prevAct() {
@@ -85,10 +87,3 @@ function prevAct() {
   var selectedImageDiv = document.getElementById("selectedImage");
   selectedImageDiv.innerHTML = `<img src="${imageUrl}" alt="Selected Image">`;
 }
-
-
-
-
-
-
-  

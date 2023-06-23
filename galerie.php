@@ -5,8 +5,10 @@ require_once 'inc/header.inc.php';
 
 
 <div class="containerGallerie">
-<h2 class="headerGalerie">GALERIE</h2>
+    <h2 class="headerGalerie">GALERIE</h2>
+    <!--ZOOM IN ON THE ACTIVE IMAGE IN THE GALLERY-->
     <div id="selectedImage"></div>
+    <!--GALLERY-->
     <div class="gallery">
         <div id="slider" class="slider">
         </div>

@@ -9,45 +9,46 @@
 :root {
   --image-size: 500px;
 }
+
+/*GLOBAL CSS*/
 body {
   background-image: url(../assets/gta-v-lamborghini-in-motion-4k-8f.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 main {
-    margin-top: 110px;
+  margin-top: 110px;
 }
 h2 {
-    text-align: center;
+  text-align: center;
 }
+
+/*CLASS, ID*/
 .align-middle p {
-    margin-bottom: 7rem;
+  margin-bottom: 7rem;
 }
-
-
 #containerVip {
-    display: flex;
-    justify-content: center;
-    height: 80vh;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
 }
 #containerVip img {
-    width: 17vw;
+  width: 17vw;
 }
 .imgLeft {
-    display: flex;
-    align-self: end;
+  display: flex;
+  align-self: end;
 }
 .imgRight {
-    display: flex;
-    align-self: start;
+  display: flex;
+  align-self: start;
 }
 #contaireText {
-    align-items: center;
-    margin: 0;  
-    padding: 10rem;
-    width: 45vw;
+  align-items: center;
+  margin: 0;
+  padding: 10rem;
+  width: 45vw;
 }
 .align-middle p {
   background-color: rgba(255, 255, 255, 0.5);
@@ -57,58 +58,54 @@ h2 {
   text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
 }
 #sideBar {
-    bottom: 3rem;
+  bottom: 3rem;
 }
-
 
 /*FOOTER*/
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 6vh;
+  margin-top: 5rem;
+}
+.contact {
+  display: flex;
+  align-items: center;
+}
+.imgFooter {
+  height: 2vh;
+}
+footer p {
+  margin: 0 0 0 10px;
+}
+.age {
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(../assets/gta-v-lamborghini-in-motion-4k-8f-640x1136.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .delImgs {
+    display: none;
+  }
+  #containerVip {
+    height: 100%;
+    margin-top: 15vh;
+  }
+  #contaireText {
+    width: 80vw;
+    padding: 0;
+  }
+  footer {
     margin-top: 5rem;
   }
-  .contact {
-    display: flex;
-    align-items: center;
-  }
-  .imgFooter {
-    height: 2vh;
-  }
-  footer p {
-    margin: 0 0 0 10px; 
-  }
-  .age {
-    height: 24px;
-    display: flex;
-    align-items: center;
-  }
-
-
-  
-
-  @media screen and (max-width: 768px) {
-    body {
-        background-image: url(../assets/gta-v-lamborghini-in-motion-4k-8f-640x1136.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .delImgs {
-        display: none;
-    }
-    #containerVip {
-        height: 100%;
-        margin-top: 15vh;
-    }
-    #contaireText {
-        width: 80vw;
-        padding: 0;
-    }
-    footer {
-        margin-top: 5rem;
-    }
-    
-  }
+}

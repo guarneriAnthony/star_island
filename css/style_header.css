@@ -1,89 +1,90 @@
+/*GLOBAL CSS*/
 a {
-    text-decoration: none;
-  }
-.navbar-brand{
-    position: absolute;
-    top: 10px;
-    left: 0;
-    margin-left: 2rem;
-}
-.container-fluid {
-    margin-left: 15rem;
+  text-decoration: none;
 }
 
+/*CLASS, ID*/
+.navbar-brand {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  margin-left: 2rem;
+}
 .navbar {
-    height: 110px;
-    padding: 0;
+  height: 110px;
+  padding: 0;
 }
 
 #navbarColor01 {
-    margin-left: 8rem;
+  margin-left: 8rem;
+}
+.nav-item {
+  margin-left: 6rem;
+  display: flex;
+  align-items: center;
+}
+.container-fluid {
+  margin-left: 15rem;
 }
 
-.nav-item{
-    margin-left: 6rem ;
-    display: flex;
-    align-items: center;
-}
-
-
-.item-row{
-    margin: 0;
-    margin-top: 2rem;
+.item-row {
+  margin: 0;
+  margin-top: 2rem;
 }
 .class-text {
-    margin: 0 1rem 0 2rem;
-    color: white;
+  margin: 0 1rem 0 2rem;
+  color: white;
 }
- .class-ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
- }
- .firstItem, .secondItem {
-    margin-top: 20px;
- }
+.class-ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.firstItem,
+.secondItem {
+  margin-top: 20px;
+}
 
 #navbarHeader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 20;
-    height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 20;
+  height: 100px;
 }
 
+/*MEDIAQUERY*/
 @media screen and (max-width: 768px) {
-    /*Navbar burger*/
-    #ico-home {
-        display: none;
-    }
-    #container-fluid  {
-        justify-content: end !important;
-    }
-    .navbar-collapse {
-        justify-content: end !important;
-    }
-   
-    .class-ul {
-        padding: 0;
-    }
-    .imgs-nav{
-        display: none;
-    }
-    .nav-item{
-        justify-content: end !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-    .nav-item .class-text {
-        margin: 0;
-    }
-    .item-row{
-        margin: 15px;
-    }
-    /*logo navbar*/*
-    .navbar-brand img {
-        width: 35vw;
-    }
+  /*Navbar burger*/
+  #ico-home {
+    display: none;
+  }
+  #container-fluid {
+    justify-content: end !important;
+  }
+  .navbar-collapse {
+    justify-content: end !important;
+  }
+  .class-ul {
+    padding: 0;
+  }
+  .imgs-nav {
+    display: none;
+  }
+  .nav-item {
+    justify-content: end !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .nav-item .class-text {
+    margin: 0;
+  }
+  .item-row {
+    margin: 15px;
+  }
+  /*logo navbar*/
+  * .navbar-brand img {
+    width: 35vw;
+  }
 }

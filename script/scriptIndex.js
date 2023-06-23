@@ -9,6 +9,7 @@ setInterval(() => {
   nextImg();
 }, 2500);
 
+/*INIT OF WRAPPER AND IMG IN HTML*/
 function init() {
   for (var i = 0; i < images; i++) {
     var imageWrapper = document.createElement("div");
@@ -28,9 +29,9 @@ function init() {
     let touchendX = 0;
   }
 }
-
 init();
 
+/*CLICK TO CHANGE SELECTED IMG (RIGHT)*/
 right.onclick = nextImg;
 function nextImg() {
   if (selected === images - 1) {
@@ -44,6 +45,7 @@ function nextImg() {
   handleSelection();
 }
 
+/*CLICK TO CHANGE SELECTED IMG (LEFT)*/
 left.onclick = prevImg;
 function prevImg() {
   selected--;
@@ -53,6 +55,7 @@ function prevImg() {
   handleSelection();
 }
 
+/*TO HANDLE THE SELECTION OF IMG*/
 function handleSelection() {
   var images = document.getElementsByClassName("wrapper");
   if (selected === images.length - 1) {
@@ -75,6 +78,7 @@ function handleSelection() {
   }
 }
 
+/*FUNCTION TO VALIDATE A STAR*/
 let changeStars = document.querySelectorAll(".changeStar");
 let star0 = document.querySelector(".star0");
 let star1 = document.querySelector(".star1");

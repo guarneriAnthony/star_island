@@ -2,6 +2,7 @@
 require_once 'inc/header.inc.php';
 ?>
 
+<!--SECTION TO BECOME A VIP -->
 <h2>DEVENIR VIP</h2>
 <div class="text-center mx-auto" id="containerVip">
     <img class="border border-danger delImgs imgLeft" src="./assets/Perso1-removebg-preview.png">

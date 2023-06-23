@@ -9,27 +9,26 @@
 :root {
   --image-size: 500px;
 }
+
+/*GLOBAL CSS*/
 body {
   background-image: url(../assets/nissan-gtr-gtav-5k-va.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-#sideBar {
-  bottom: 3rem;
-}
 h2 {
   font-size: 4rem;
   text-decoration: underline;
   margin-bottom: 35px;
 }
-.titleIndexGalerieInside{
-  text-align: center;
-}
 
-/* GENERAL CSS */
+/*CLASS, ID*/
 .titleIndex,
 .text-index {
+  text-align: center;
+}
+.titleIndexGalerieInside {
   text-align: center;
 }
 .textIndex {
@@ -179,7 +178,7 @@ img {
   max-width: 80vw;
 }
 
-/*DISCUTION*/
+/*COMMENTARY*/
 .commentsLeft {
   display: flex;
   flex-direction: column;
@@ -302,10 +301,13 @@ h5 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 .form-floating {
   width: 75%;
+}
+
+#sideBar {
+  bottom: 3rem;
 }
 
 /*FOOTER*/
@@ -335,7 +337,7 @@ footer p {
 .button-46 {
   align-items: center;
   background-color: rgba(240, 240, 240, 0.26);
-  border: 1px solid #DFDFDF;
+  border: 1px solid #dfdfdf;
   border-radius: 16px;
   box-sizing: border-box;
   color: #000000;
@@ -348,7 +350,7 @@ footer p {
   max-width: 15%;
   padding: 14px 22px;
   text-decoration: none;
-  transition: all .2s;
+  transition: all 0.2s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -362,10 +364,9 @@ footer p {
 }
 
 .button-46:hover {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-color: rgba(0, 0, 0, 0.19);
 }
-
 
 /*MEDIA QUERY*/
 @media screen and (max-width: 768px) {
@@ -376,7 +377,7 @@ footer p {
     background-position: center;
   }
   h2 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
   .item2 {
     margin: 60px 0 0 0;
@@ -415,6 +416,7 @@ footer p {
   .carousel-indicators {
     margin-bottom: 6rem;
   }
+
   /*Carousel N2*/
   .arrows {
     bottom: 10vh;
@@ -423,6 +425,7 @@ footer p {
   .right {
     display: none;
   }
+
   /*BULLE DE DISCUSSION*/
   .containerImgComments {
     display: none;
@@ -444,6 +447,7 @@ footer p {
     min-width: 200px;
     padding: 14px 16px;
   }
+
   /*Footer*/
   footer {
     height: 4vh;

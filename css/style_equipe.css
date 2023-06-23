@@ -9,6 +9,8 @@
 :root {
   --image-size: 500px;
 }
+
+/*GLOBAL CSS*/
 body {
   background-image: url(../assets/gta_decors2.jpg);
   background-size: cover;
@@ -18,9 +20,6 @@ body {
 main {
   height: 84vh;
 }
-#sideBar {
-  bottom: 3rem;
-}
 a {
   color: white;
 }
@@ -28,12 +27,16 @@ h2 {
   text-align: center;
   margin-top: 20vh;
 }
+
+/*CLASS, ID*/
+#sideBar {
+  bottom: 3rem;
+}
 .class-navBar {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-
 .roles {
   display: flex;
   align-items: center;
@@ -54,18 +57,15 @@ h2 {
 .lastLi {
   border-radius: 0 15px 15px 0;
 }
-
 .col-2 .myImage {
   max-width: 120px;
   border-radius: 65px;
   background-color: rgba(255, 255, 255, 0.2);
 }
-
 .row {
   text-align: center;
   justify-content: center;
 }
-
 .dropdown-toggle::after {
   display: none;
 }
@@ -78,6 +78,7 @@ h2 {
   text-align: center;
 }
 
+/*MEDIA QUERY*/
 @media screen and (max-width: 768px) {
   main {
     height: 100%;
