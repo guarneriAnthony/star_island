@@ -1,8 +1,7 @@
 /*function de tri des avatars en comparant la liste et le contente de chanque 2eme enfant des dropdown*/ 
-/*document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   let filterItems = document.querySelectorAll(".roles li");
   let columns = document.querySelectorAll(".dropdown");
-  console.log(columns);
 
   filterItems.forEach(function (item) {
     item.addEventListener("click", function () {
@@ -21,7 +20,7 @@
     });
   });
 });
-*/
+
 
 /*change img and probaly lets include one url*/
 let images = document.querySelectorAll(".myImage");

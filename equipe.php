@@ -35,121 +35,218 @@ require_once 'inc/header.inc.php';
             <div class="dropdown">
                 <a class="dropdown-toggle" type="button" onclick="toggleDropdown(this)" aria-haspopup="true" aria-expanded="false">
                     <img src="./assets/Souen4.png" alt="avatar" id="" class="myImage">
-                    <p class="role">Modo</p>
-                    <p class="name">Name</p>
                 </a>
                 <div class="dropdown-menu" style="display: none;">
                     <a class="dropdown-item" href="lien_vers_reseau_social_1">Réseau social 1</a>
                     <a class="dropdown-item" href="lien_vers_reseau_social_2">Réseau social 2</a>
                     <a class="dropdown-item" href="lien_vers_reseau_social_3">Réseau social 3</a>
                 </div>
+                <p class="role">Modo</p>
+                <p class="name">Name</p>
             </div>
         </div>
         <div class="col-2">
             <div class="dropdown">
                 <a class="dropdown-toggle" type="button" onclick="toggleDropdown(this)" aria-haspopup="true" aria-expanded="false">
                     <img src="./assets/charmilia4.png" alt="avatar" id="" class="myImage">
-                    <p class="role">mappeur , modo</p>
-                    <p class="name">Name</p>
                 </a>
                 <div class="dropdown-menu" style="display: none;">
                     <a class="dropdown-item" href="lien_vers_reseau_social_1">Réseau social 1</a>
                     <a class="dropdown-item" href="lien_vers_reseau_social_2">Réseau social 2</a>
                     <a class="dropdown-item" href="lien_vers_reseau_social_3">Réseau social 3</a>
                 </div>
+                <p class="role">mappeur</p>
+                <p class="name">Name</p>
             </div>
         </div>
         <div class="col-2">
             <div class="dropdown">
                 <a class="dropdown-toggle" type="button" onclick="toggleDropdown(this)" aria-haspopup="true" aria-expanded="false">
                     <img src="./assets/hans4.png" alt="avatar" id="" class="myImage">
-                    <p class="role">developpeur</p>
-                    <p class="name">Name</p>
                 </a>
                 <div class="dropdown-menu" style="display: none;">
                     <a class="dropdown-item" href="lien_vers_reseau_social_1">Réseau social 1</a>
                     <a class="dropdown-item" href="lien_vers_reseau_social_2">Réseau social 2</a>
                     <a class="dropdown-item" href="lien_vers_reseau_social_3">Réseau social 3</a>
                 </div>
+                <p class="role">developpeur</p>
+                <p class="name">Name</p>
             </div>
         </div>
         <div class="col-2">
             <div class="dropdown">
                 <a class="dropdown-toggle" type="button" onclick="toggleDropdown(this)" aria-haspopup="true" aria-expanded="false">
                     <img src="./assets/Souen4.png" alt="avatar" id="" class="myImage">
-                    <p class="role">Helper</p>
-                    <p class="name">Name</p>
                 </a>
                 <div class="dropdown-menu" style="display: none;">
                     <a class="dropdown-item" href="lien_vers_reseau_social_1">Réseau social 1</a>
                     <a class="dropdown-item" href="lien_vers_reseau_social_2">Réseau social 2</a>
                     <a class="dropdown-item" href="lien_vers_reseau_social_3">Réseau social 3</a>
                 </div>
-            </div>
-        </div>
-        <!--ROW 2 / 3-->
-        <div class="row">
-            <div class="col-2">
-                <img src="./assets/hans4.png" alt="avatar" class="myImage">
-                <p class="role">mappeur</p>
-                <p class="name">Name</p>
-            </div>
-            <div class="col-2">
-                <img src="./assets/Souen4.png" alt="avatar" class="myImage">
-                <p class="role">developpeur</p>
-                <p class="name">Name</p>
-            </div>
-            <div class="col-2">
-                <img src="./assets/hans4.png" alt="avatar" class="myImage">
                 <p class="role">Helper</p>
                 <p class="name">Name</p>
             </div>
-            <div class="col-2">
-                <img src="./assets/charmilia4.png" alt="avatar" class="myImage">
+        </div>
+    </div>
+    <!--ROW 2 / 3-->
+    <div class="row">
+    <div class="col-2">
+            <div class="dropdown">
+                <a class="dropdown-toggle" type="button" onclick="toggleDropdown(this)" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/hans4.png" alt="avatar" id="" class="myImage">
+                </a>
+                <div class="dropdown-menu" style="display: none;">
+                    <a class="dropdown-item" href="lien_vers_reseau_social_1">Réseau social 1</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_2">Réseau social 2</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_3">Réseau social 3</a>
+                </div>
+                <p class="role">Admin</p>
+                <p class="name">Name</p>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="dropdown">
+                <a class="dropdown-toggle" type="button" onclick="toggleDropdown(this)" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/Souen4.png" alt="avatar" id="" class="myImage">
+                </a>
+                <div class="dropdown-menu" style="display: none;">
+                    <a class="dropdown-item" href="lien_vers_reseau_social_1">Réseau social 1</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_2">Réseau social 2</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_3">Réseau social 3</a>
+                </div>
                 <p class="role">Modo</p>
                 <p class="name">Name</p>
             </div>
-            <div class="col-2">
-                <img src="./assets/hans4.png" alt="avatar" class="myImage">
-                <p class="role">developpeur</p>
-                <p class="name">Name</p>
-            </div>
-            <div class="col-2">
-                <img src="./assets/Souen4.png" alt="avatar" class="myImage">
+        </div>
+        <div class="col-2">
+            <div class="dropdown">
+                <a class="dropdown-toggle" type="button" onclick="toggleDropdown(this)" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/charmilia4.png" alt="avatar" id="" class="myImage">
+                </a>
+                <div class="dropdown-menu" style="display: none;">
+                    <a class="dropdown-item" href="lien_vers_reseau_social_1">Réseau social 1</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_2">Réseau social 2</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_3">Réseau social 3</a>
+                </div>
                 <p class="role">mappeur</p>
                 <p class="name">Name</p>
             </div>
         </div>
-        <!--ROW 3 / 3-->
-        <div class="row">
-            <div class="col-2">
-                <img src="./assets/hans4.png" alt="avatar" class="myImage">
+        <div class="col-2">
+            <div class="dropdown">
+                <a class="dropdown-toggle" type="button" onclick="toggleDropdown(this)" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/hans4.png" alt="avatar" id="" class="myImage">
+                </a>
+                <div class="dropdown-menu" style="display: none;">
+                    <a class="dropdown-item" href="lien_vers_reseau_social_1">Réseau social 1</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_2">Réseau social 2</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_3">Réseau social 3</a>
+                </div>
+                <p class="role">developpeur</p>
+                <p class="name">Name</p>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="dropdown">
+                <a class="dropdown-toggle" type="button" onclick="toggleDropdown(this)" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/Souen4.png" alt="avatar" id="" class="myImage">
+                </a>
+                <div class="dropdown-menu" style="display: none;">
+                    <a class="dropdown-item" href="lien_vers_reseau_social_1">Réseau social 1</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_2">Réseau social 2</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_3">Réseau social 3</a>
+                </div>
                 <p class="role">Helper</p>
                 <p class="name">Name</p>
             </div>
-            <div class="col-2">
-                <img src="./assets/Souen4.png" alt="avatar" class="myImage">
-                <p class="role">developpeur</p>
+        </div>
+    </div>
+    <!--ROW 3 / 3-->
+    <div class="row">
+    <div class="col-2">
+            <div class="dropdown">
+                <a class="dropdown-toggle" type="button" onclick="toggleDropdown(this)" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/hans4.png" alt="avatar" id="" class="myImage">
+                </a>
+                <div class="dropdown-menu" style="display: none;">
+                    <a class="dropdown-item" href="lien_vers_reseau_social_1">Réseau social 1</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_2">Réseau social 2</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_3">Réseau social 3</a>
+                </div>
+                <p class="role">Admin</p>
                 <p class="name">Name</p>
             </div>
-            <div class="col-2">
-                <img src="./assets/hans4.png" alt="avatar" class="myImage">
-                <p class="role">admin</p>
+        </div>
+        <div class="col-2">
+            <div class="dropdown">
+                <a class="dropdown-toggle" type="button" onclick="toggleDropdown(this)" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/Souen4.png" alt="avatar" id="" class="myImage">
+                </a>
+                <div class="dropdown-menu" style="display: none;">
+                    <a class="dropdown-item" href="lien_vers_reseau_social_1">Réseau social 1</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_2">Réseau social 2</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_3">Réseau social 3</a>
+                </div>
+                <p class="role">Modo</p>
                 <p class="name">Name</p>
             </div>
-            <div class="col-2">
-                <img src="./assets/charmilia4.png" alt="avatar" class="myImage">
+        </div>
+        <div class="col-2">
+            <div class="dropdown">
+                <a class="dropdown-toggle" type="button" onclick="toggleDropdown(this)" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/charmilia4.png" alt="avatar" id="" class="myImage">
+                </a>
+                <div class="dropdown-menu" style="display: none;">
+                    <a class="dropdown-item" href="lien_vers_reseau_social_1">Réseau social 1</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_2">Réseau social 2</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_3">Réseau social 3</a>
+                </div>
                 <p class="role">mappeur</p>
                 <p class="name">Name</p>
             </div>
-            <div class="col-2">
-                <img src="./assets/hans4.png" alt="avatar" class="myImage">
+        </div>
+        <div class="col-2">
+            <div class="dropdown">
+                <a class="dropdown-toggle" type="button" onclick="toggleDropdown(this)" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/hans4.png" alt="avatar" id="" class="myImage">
+                </a>
+                <div class="dropdown-menu" style="display: none;">
+                    <a class="dropdown-item" href="lien_vers_reseau_social_1">Réseau social 1</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_2">Réseau social 2</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_3">Réseau social 3</a>
+                </div>
                 <p class="role">developpeur</p>
+                <p class="name">Name</p>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="dropdown">
+                <a class="dropdown-toggle" type="button" onclick="toggleDropdown(this)" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/Souen4.png" alt="avatar" id="" class="myImage">
+                </a>
+                <div class="dropdown-menu" style="display: none;">
+                    <a class="dropdown-item" href="lien_vers_reseau_social_1">Réseau social 1</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_2">Réseau social 2</a>
+                    <a class="dropdown-item" href="lien_vers_reseau_social_3">Réseau social 3</a>
+                </div>
+                <p class="role">Helper</p>
                 <p class="name">Name</p>
             </div>
         </div>
     </div>
 </div>
+
+<?php 
+$requetes = execute("SELECT * FROM team")  -> fetchAll(PDO::FETCH_ASSOC);
+echo '<pre>';
+var_dump($requetes);
+echo'</pre>';
+foreach ($requetes as $requete) : ?>
+
+<p class="name">dsds <?$requete['name']?> </p> 
+<?php endforeach ?>
+
+
 
 <?php require_once 'inc/sideBar.php'; ?>
 <link rel="stylesheet" href="./css/style_equipe.css">

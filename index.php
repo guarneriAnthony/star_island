@@ -1,5 +1,20 @@
 <?php require_once 'config/function.php';
 require_once 'inc/header.inc.php';
+
+
+?>
+<?php 
+$dt = time();
+$dtFormat = date("d/m/Y", $dt);
+
+if ($_POST) {
+    execute("INSERT INTO comment (comment, publish_date) VALUES (:comment, NOW())", array(
+        ':comment' => $_POST['comment'],
+    ),);
+    header('Location: /PHP/star_island/');
+}   
+
+$comments = execute("SELECT * FROM comment ORDER BY id DESC LIMIT 4") -> fetchAll(PDO::FETCH_ASSOC);
 ?>
 <script src="script/scriptIndex.js" defer></script>
 
@@ -57,7 +72,18 @@ require_once 'inc/header.inc.php';
 <div class=" container containerComments">
     <!--COMMENTS LEFT-->
     <section class="commentsLeft commentsBorders">
-        <div class="commentOne commentsBordersLeft">
+        <?php 
+        $direction = true;
+            foreach ($comments as $comment) :      
+                if ($direction) {
+                    $position = "Left";
+                    $direction = false;
+                } else {
+                    $position = "Right";
+                    $direction = true;
+                }
+        ?>
+        <div class="comment<?= $position?>">
             <div class="containerStars">
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
                 <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
@@ -70,72 +96,13 @@ require_once 'inc/header.inc.php';
                     <img src="./assets/Souen4.png" class="imgComments" alt="image avatar">
                 </div>
                 <div class="containerTextComments">
-                    <p class="comments">Super serveur GTA RP , J'adore les maps le role play et les gens qui gèrent le serveur. Vraiment une trés bonne map je recommande à tout le monde. Le seul points négatif est que je voudrais etre membre vip sans payer </p>
-                    <p class="dateComments">Publier le 15/02/2023</p>
+                    <p class="comments"><?=$comment['comment']?></p>
+                    <p class="dateComments">Publier: <?= $comment['publish_date'] ?></p>
                 </div>
 
             </div>
         </div>
-
-        <div class="commentTwo commentsBordersRight">
-            <div class="containerStars">
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
-            </div>
-            <div class="containerInterComments">
-                <div class="containerTextComments">
-                    <p class="comments">Super serveur GTA RP Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet iure ea, iusto qui voluptatibus sapiente. Earum, dolorum labore! Error pariatur est, esse beatae culpa ab excepturi laudantium modi perferendis.</p>
-                    <p class="dateComments">Publier le 15/02/2023</p>
-                </div>
-                <div class="containerImgComments">
-                    <img src="./assets/charmilia4.png" class="imgComments" alt="image avatar">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--COMMENTS RIGHT-->
-    <section class="commentsRight">
-        <div class="commentThree commentsBordersLeft">
-            <div class="containerStars">
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
-            </div>
-            <div class="containerInterComments">
-                <div class="containerImgComments">
-                    <img src="./assets/Souen4.png" class="imgComments" alt="image avatar">
-                </div>
-                <div class="containerTextComments">
-                    <p class="comments">Serveur GTA RP trop nul, les soldat sont pas à pied. Ils y a trop de singe sur les montagnes et encore pire les modo mon ban parceque j'ai que 17 ans ete demi alors que jes des poils au menton</p>
-                    <p class="dateComments">Publier le 15/02/2023</p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="commentFour commentsBordersRight">
-            <div class="containerStars">
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
-            </div>
-            <div class="containerInterComments">
-                <div class="containerTextComments">
-                    <p class="comments">Génial le serveur FiveM StarIsland, j'ai jouer le role d'un chauffeur de taxis alors que dans la vie je suis un chauffeur de bus. En vrai cest trop bien de pouvoir changer de metier dans un jeu.</p>
-                    <p class="dateComments">Publier le 15/02/2023</p>
-                </div>
-                <div class="containerImgComments">
-                    <img src="./assets/hans4.png" class="imgComments" alt="image avatar">
-                </div>
-            </div>
-        </div>
+        <?php endforeach ?>
     </section>
 
     <!--CARD TO LET ONE NOTICE  -->
@@ -149,15 +116,13 @@ require_once 'inc/header.inc.php';
                 <img src="./assets/starBlack.png" class="imgComments changeStar star3" alt="image etoile"></img>
                 <img src="./assets/starBlack.png" class="imgComments changeStar star4" alt="image etoile"></img>
             </div>
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <form class="form-floating" method="post" >
+                <textarea name="comment" id="floatingTextarea2" class="form-control" placeholder="Leave a comment here" style="height: 100px"></textarea>
                 <label for="floatingTextarea2">Ecrivez votre commentaire :</label>
-            </div>
-            <button class="button-46">Publier</button>
+                <button type="submit" class="button-46">Publier</button>
+            </form>            
         </div>
     </div>
-
-
 
     <link rel="stylesheet" href="./css/style_index.css">
     <?php require_once 'inc/footer.inc.php'; ?>

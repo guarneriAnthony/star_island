@@ -188,38 +188,22 @@ img {
   flex-direction: column;
   align-items: end;
 }
-.commentOne {
+.commentLeft {
   height: 20vh;
   width: 25vw;
   background-color: rgba(255, 255, 255, 0.5);
-}
-.commentTwo {
-  height: 20vh;
-  width: 25vw;
-  background-color: rgba(255, 255, 255, 0.5);
-  align-self: flex-end;
-}
-.commentThree {
-  height: 20vh;
-  width: 25vw;
-  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px 50px 0px 50px;
   align-self: flex-start;
 }
-.commentFour {
+.commentRight {
   height: 20vh;
   width: 25vw;
   background-color: rgba(255, 255, 255, 0.5);
-}
-.commentsBordersLeft {
-  border-radius: 50px 50px 0px 50px;
-}
-.commentsBordersRight {
   border-radius: 50px 50px 50px 0px;
+  align-self: flex-end;
 }
-.commentOne,
-.commentTwo,
-.commentThree,
-.commentFour {
+.commentLeft,
+.commentRight {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -228,17 +212,14 @@ img {
   color: white;
   height: 25vh;
 }
-.commentOne p,
-.commentTwo p,
-.commentThree p,
-.commentFour p {
+.commentLeft p,
+.commentRight p {
   margin: 0;
   padding: 0;
 }
-.commentOne .dateComments,
-.commentTwo .dateComments,
-.commentThree .dateComments,
-.commentFour .dateComments {
+.commentLeft .dateComments,
+.commentRight .dateComments
+{
   font-size: small;
   color: white;
   margin-top: 5px;
@@ -253,6 +234,7 @@ img {
   border-radius: 50px;
 }
 .comments {
+  width: 100%;
   margin: 0;
 }
 .starsComments {
@@ -291,6 +273,7 @@ img {
   display: flex;
   flex-direction: column;
   margin: 5px 5px;
+
 }
 h5 {
   font-size: 35px;
@@ -382,10 +365,8 @@ footer p {
   .item2 {
     margin: 60px 0 0 0;
   }
-  .commentOne,
-  .commentTwo,
-  .commentThree,
-  .commentFour {
+  .commentLeft,
+  .commentRight {
     align-self: center;
     margin: 15px 0px;
     width: 50vw;
@@ -435,7 +416,6 @@ footer p {
   }
   .containerTextComments p {
     font-size: 13px;
-    color: black;
     font-weight: bold;
   }
   .dateComments {

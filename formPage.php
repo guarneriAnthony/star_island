@@ -1,6 +1,6 @@
 <?php 
 require_once './config/function.php';
-require_once './inc/header.inc.php';
+
 
 $pages = execute ("SELECT * FROM page") -> fetchAll(PDO::FETCH_ASSOC);
 $contents = execute ("SELECT * FROM content") -> fetchAll(PDO:: FETCH_ASSOC);

@@ -79,14 +79,7 @@ $error=false;
         <input name="email" value="<?= $user['email'] ?? ''; ?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         <small class="text-danger"><?= $email ?? ""; ?></small>
     </div>
-    <div class="mb-3">
-        <label for="picture_profil" class="form-label">Photo de profil</label>
-        <input onchange="loadFile()" name="editPicture" type="file" class="form-control" id="picture_profil">
-        <small class="text-danger"><?= $picture ?? ""; ?></small>
-        <div class="text-center">
-        <img  id="image" src="<?= '../assets/' .$user['picture_profil'];?>"  class="w-25 rounded mt-3 rounded-circle " alt=""></div>
-    </div>
-
+    
     <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
@@ -95,16 +88,5 @@ $error=false;
     <input type="hidden"  name="picture_profil" value="<?= $user['picture_profil'] ?? ''; ?>">
 </form>
 
-
-
-
-
-<script>
-    let loadFile = function()
-    {
-        let image = document.getElementById('image');
-        image.src = URL.createObjectURL(event.target.files[0]);
-    }
-</script>
 
 <?php require_once '../inc/footer.inc.php'; ?>

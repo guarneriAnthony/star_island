@@ -1,5 +1,7 @@
-<?php      require_once '../config/function.php';
-require_once '../inc/header.inc.php';       
+<?php      require_once './config/function.php';
+require_once './inc/header.inc.php'; 
+
+
 
 if(!empty($_POST)){
     if (empty($_POST['email'])) {
@@ -7,7 +9,7 @@ if(!empty($_POST)){
         $error=true;
 
    }else{
-       $user=execute("SELECT * FROM user WHERE email=:email",array(
+       $user = execute("SELECT * FROM user WHERE email=:email",array(
               ':email'=>$_POST['email']
        ));
        if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
@@ -51,6 +53,9 @@ if(!empty($_POST)){
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
+<style>
+main {
+    margin-top: 20vh;
+}</style>
 
 
-<?php require_once '../inc/footer.inc.php';    ?>
