@@ -1,7 +1,5 @@
 <?php require_once 'config/function.php';
 require_once 'inc/header.inc.php';
-
-
 ?>
 <?php 
 $dt = time();
@@ -110,19 +108,21 @@ $comments = execute("SELECT * FROM comment ORDER BY id DESC LIMIT 4") -> fetchAl
         <div class="card-body formIndex">
             <h5 class="card-title">Votre avis nous intéresse</h5>
             <div class="containerStars">
-                <img src="./assets/starBlack.png" class="imgComments changeStar star0" alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar star1" alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar star2" alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar star3" alt="image etoile"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar star4" alt="image etoile"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star0" alt="image etoile" data_value = "1"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star1" alt="image etoile" data_value = "2"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star2" alt="image etoile" data_value = "3"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star3" alt="image etoile" data_value = "4"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star4" alt="image etoile" data_value = "5"></img>
             </div>
             <form class="form-floating" method="post" >
-                <textarea name="comment" id="floatingTextarea2" class="form-control" placeholder="Leave a comment here" style="height: 100px"></textarea>
+                <textarea name="comment" id="floatingTextarea2" class="form-control" placeholder="Ecrivez votre commentaire :" style="height: 100px"></textarea>
                 <label for="floatingTextarea2">Ecrivez votre commentaire :</label>
                 <button type="submit" class="button-46">Publier</button>
             </form>            
         </div>
     </div>
+
+
 
     <link rel="stylesheet" href="./css/style_index.css">
     <?php require_once 'inc/footer.inc.php'; ?>
