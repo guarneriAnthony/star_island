@@ -155,4 +155,17 @@ changeStars.forEach((changeStar) => {
   });
 });
 
+/*$('.containerStars img').on('click', function() {
+  let onStar = parseInt($(this).attr('data_value'), 10); 
+  $('#iNote').val(onStar);
+});
+*/
 
+const nbrStars = document.getElementById('nbrStar');
+const stars = document.querySelectorAll('.changeStar');
+stars.forEach((star) => {
+  star.addEventListener('click', () => {
+    nbrStars.value = star.getAttribute('data_position');
+    console.log(star.getAttribute('data_position'));
+  })
+})

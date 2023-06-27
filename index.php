@@ -6,8 +6,9 @@ $dt = time();
 $dtFormat = date("d/m/Y", $dt);
 
 if ($_POST) {
-    execute("INSERT INTO comment (comment, publish_date) VALUES (:comment, NOW())", array(
+    execute("INSERT INTO comment (comment, publish_date, rating) VALUES (:comment, NOW(), :rating)", array(
         ':comment' => $_POST['comment'],
+        ':rating' => $_POST['rating'],
     ),);
     header('Location: /PHP/star_island/');
 }   
@@ -15,6 +16,7 @@ if ($_POST) {
 $comments = execute("SELECT * FROM comment ORDER BY id DESC LIMIT 4") -> fetchAll(PDO::FETCH_ASSOC);
 ?>
 <script src="script/scriptIndex.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
 <div id="carouselIndicators" class="carousel slide">
@@ -83,11 +85,15 @@ $comments = execute("SELECT * FROM comment ORDER BY id DESC LIMIT 4") -> fetchAl
         ?>
         <div class="comment<?= $position?>">
             <div class="containerStars">
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <?php 
+                $i = 0;
+                for (; $i < $comment['rating']; $i++) : ?>
+                    <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                <?php
+                endfor;
+                for (; $i < 5; $i++) : ?>
+                    <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
+                <?php  endfor?>
             </div>
             <div class="containerInterComments">
                 <div class="containerImgComments">
@@ -108,20 +114,21 @@ $comments = execute("SELECT * FROM comment ORDER BY id DESC LIMIT 4") -> fetchAl
         <div class="card-body formIndex">
             <h5 class="card-title">Votre avis nous intéresse</h5>
             <div class="containerStars">
-                <img src="./assets/starBlack.png" class="imgComments changeStar star0" alt="image etoile" data_value = "1"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar star1" alt="image etoile" data_value = "2"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar star2" alt="image etoile" data_value = "3"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar star3" alt="image etoile" data_value = "4"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar star4" alt="image etoile" data_value = "5"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star0" alt="image etoile" data_position = "1"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star1" alt="image etoile" data_position = "2"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star2" alt="image etoile" data_position = "3"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star3" alt="image etoile" data_position = "4"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star4" alt="image etoile" data_position = "5"></img>
             </div>
             <form class="form-floating" method="post" >
                 <textarea name="comment" id="floatingTextarea2" class="form-control" placeholder="Ecrivez votre commentaire :" style="height: 100px"></textarea>
                 <label for="floatingTextarea2">Ecrivez votre commentaire :</label>
+                <input type="hidden" id="nbrStar" name="rating" value="" />  
                 <button type="submit" class="button-46">Publier</button>
-            </form>            
+            </form> 
+                     
         </div>
     </div>
-
 
 
     <link rel="stylesheet" href="./css/style_index.css">
