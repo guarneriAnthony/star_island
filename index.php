@@ -13,7 +13,7 @@ if ($_POST) {
     header('Location: /PHP/star_island/');
 }   
 
-$comments = execute("SELECT * FROM comment ORDER BY id DESC LIMIT 4") -> fetchAll(PDO::FETCH_ASSOC);
+$comments = execute("SELECT * FROM comment WHERE validate = 1 ORDER BY id DESC LIMIT 4") -> fetchAll(PDO::FETCH_ASSOC);
 ?>
 <script src="script/scriptIndex.js" defer></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -83,6 +83,7 @@ $comments = execute("SELECT * FROM comment ORDER BY id DESC LIMIT 4") -> fetchAl
                     $direction = true;
                 }
         ?>
+        <?php if ($comment['validate'] == 1) : ?>
         <div class="comment<?= $position?>">
             <div class="containerStars">
                 <?php 
@@ -106,6 +107,8 @@ $comments = execute("SELECT * FROM comment ORDER BY id DESC LIMIT 4") -> fetchAl
 
             </div>
         </div>
+        <?php endif; ?>
+
         <?php endforeach ?>
     </section>
 

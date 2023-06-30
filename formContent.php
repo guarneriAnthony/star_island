@@ -76,7 +76,7 @@ if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'd
         <input name="description" type="text" class="form-control" id="description" value="<?= $content_id['description'] ?? ""; ?>">
         <small class="text-danger"><?= $description ?? ""; ?></small>
     </div>
-<label for="favoriteOnly">Selectionnez votre page :</label>
+<label for="favoriteOnly">Pour quelle page est il :</label>
 <select name="page_id" id="favoriteOnly">
     <?php foreach ($contentsPages as $content) : ?>
         <option value="<?= $content['id']; ?>"><?= $content['meta_title']; ?></option>
