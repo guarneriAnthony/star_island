@@ -40,6 +40,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PHP/star_island/formMedia.php">Media</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/PHP/star_island/formComment.php">Comments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/PHP/star_island/formEvent.php">Events</a>
+                        </li>
                     </ul>
                 </div>
             </div>

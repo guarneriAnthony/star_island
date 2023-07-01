@@ -8,11 +8,11 @@ require_once 'inc/header.inc.php';
 <h2>L'equipe</h2>
 <ul class="roles" id="filtrer">
     <li class="firstLi" id="all">Tous</li>
-    <li id="admin">Admin</li>
-    <li id="modo">Modo</li>
-    <li id="développeur">Développeur</li>
-    <li id="mapper">Mappeur</li>
-    <li class="lastLi" id="helper">Helpers</li>
+    <li id="admin">Admins</li>
+    <li id="moderateur">Modérateurs</li>
+    <li id="developpeur">Développeurs</li>
+    <li id="mapper">Mappeurs</li>
+    <li id="helper" class="lastLi">Helpers</li>
 </ul>
 <div class="container">
     <!--ROW 1 / 3-->

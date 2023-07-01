@@ -10,11 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
       columns.forEach(function (column) {
         let role = column.children[2].textContent;
         console.log(column.children[2].textContent);
+        let container = column.parentElement;
 
         if (selectedValue === "all" || role.toLowerCase() === selectedValue) {
-          column.style.display = "block";
+          container.style.display = "block";
         } else {
-          column.style.display = "none";
+          container.style.display = "none";
         }
       });
     });

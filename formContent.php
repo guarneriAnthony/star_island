@@ -8,9 +8,9 @@ require_once './config/function.php';
 require_once './inc/formHeader.inc.php';
 
 
-/*$result = execute("SELECT page.id FROM page INNER JOIN content ON page.id = content.page_id")->fetch(PDO::FETCH_ASSOC);*/
+$contentsPages = execute("SELECT * FROM page")->fetchAll(PDO::FETCH_ASSOC);
 $contents = execute("SELECT * FROM content")->fetchAll(PDO::FETCH_ASSOC);
-$contentsPages = execute("SELECT c.*, p.* FROM content c INNER JOIN page p ON c.page_id = p.id")->fetchAll(PDO::FETCH_ASSOC);
+/*$contentsPages = execute("SELECT c.*, p.* FROM content c INNER JOIN page p ON c.page_id = p.id")->fetchAll(PDO::FETCH_ASSOC);*/
 
  /*Debut de mon controle de formulaie de 'content'*/ 
  if (!empty($_POST)) {
@@ -80,10 +80,9 @@ if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'd
 <select name="page_id" id="favoriteOnly">
     <?php foreach ($contentsPages as $content) : ?>
         <option value="<?= $content['id']; ?>"><?= $content['meta_title']; ?></option>
-        <?php var_dump($content['id']); ?>
     <?php endforeach; ?>
 </select></br></br>
-    <input type="hidden" name="id" value="<?= $content_id['id'] ?? ""; ?>">
+<input type="hidden" name="id" value="<?= $content_id['id'] ?? ""; ?>">
     <button type="submit" class="btn btn-primary">Submit content</button>
 </form>
 
@@ -109,3 +108,4 @@ if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'd
 </table>
 
 
+/*La modification des id externe ne marche pas  */
