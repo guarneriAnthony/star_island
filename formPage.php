@@ -83,6 +83,7 @@ if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'd
         <tr>
             <th>Titre</th>
             <th >Description</th>
+            <th >Action</th>
         </tr>
     </thead>
     <tbody>

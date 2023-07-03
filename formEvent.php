@@ -82,6 +82,7 @@ if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'd
             <th>Id</th>
             <th >Date de debut</th>
             <th >Date de fin</th>
+            <th >Action</th>
         </tr>
     </thead>
     <tbody>

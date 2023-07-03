@@ -43,6 +43,7 @@ $comments = execute("SELECT * FROM comment")->fetchAll(PDO::FETCH_ASSOC);
             <th>Rating</th>
             <th>Comment</th>
             <th>publish_date</th>
+            <th >Action</th>
         </tr>
     </thead>
     <tbody>

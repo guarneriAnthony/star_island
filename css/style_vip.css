@@ -94,6 +94,9 @@ footer p {
     background-repeat: no-repeat;
     background-position: center;
   }
+  #sideBar {
+    bottom: 0rem;
+  }
   .delImgs {
     display: none;
   }

@@ -203,7 +203,7 @@ img {
   margin: 0;
 }
 #sideBar {
-  bottom: 1rem;
+  bottom: 3rem;
 }
 
 /*FOOTER*/
@@ -234,6 +234,9 @@ footer p {
 @media screen and (max-width: 768px) {
   main {
     height: 83vh;
+  }
+  #sideBar {
+    bottom: 0rem;
   }
   .containerGallerie {
     height: 73vh;

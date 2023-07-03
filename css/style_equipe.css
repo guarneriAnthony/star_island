@@ -18,7 +18,7 @@ body {
   background-position: center;
 }
 main {
-  height: 84vh;
+  height: 100vh;
 }
 a {
   color: white;
@@ -83,6 +83,9 @@ h2 {
 @media screen and (max-width: 768px) {
   main {
     height: 100%;
+  }
+  #sideBar {
+    bottom: 0rem;
   }
   .roles {
     flex-direction: column;
