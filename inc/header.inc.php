@@ -32,7 +32,7 @@
                             <a class="nav-link" href="http://localhost/PHP/star_island/vip.php">Devenir VIP</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PHP/star_island/team.php">L'team</a>
+                            <a class="nav-link" href="http://localhost/PHP/star_island/team.php">Team</a>
                         </li>
                     </ul>
                     <div class="class-div containerItems">
@@ -43,12 +43,26 @@
                                     <p class="class-text">Tutoriel</p>
                                 </a>
                             </li>
+
+                            <?php
+                            $events = execute(
+                                "SELECT e.id, c.title
+                                FROM event e
+                                INNER JOIN event_content ec ON e.id = ec.event_id
+                                INNER JOIN content c ON c.id = ec.content_id
+                                WHERE end_date > NOW()"
+                            )->fetchAll(PDO::FETCH_ASSOC);
+                            ?>
                             <li class="nav-item item-row secondItem">
                                 <a href="http://localhost/PHP/star_island/event.php"><img src="http://localhost/PHP/star_island/assets/vector1.png " class="imgs-nav" alt="logo event"></a>
-                                <a href="http://localhost/PHP/star_island/event.php">
-                                    <p class="class-text">Event</p>
-                                </a>
+                                
+                               <?php foreach ($events as $event) : ?>
+                                    <a href="http://localhost/PHP/star_island/event.php?evi=<?= $event['id']; ?>"><?= $event['title'] ?></a>
+                                <?php endforeach; ?>
+                            
+                                
                             </li>
+
                         </ul>
                     </div>
                 </div>

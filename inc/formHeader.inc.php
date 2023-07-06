@@ -35,7 +35,7 @@
                             <a class="nav-link" href="http://localhost/PHP/star_island/formContent.php">Content</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PHP/star_island/formTeam.php">L'equpie</a>
+                            <a class="nav-link" href="http://localhost/PHP/star_island/back/formTeam.php">L'equpie</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PHP/star_island/formMedia.php">Media</a>
