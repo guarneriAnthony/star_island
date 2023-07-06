@@ -32,7 +32,7 @@
                             <a class="nav-link" href="http://localhost/PHP/star_island/vip.php">Devenir VIP</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PHP/star_island/equipe.php">L'equipe</a>
+                            <a class="nav-link" href="http://localhost/PHP/star_island/team.php">L'team</a>
                         </li>
                     </ul>
                     <div class="class-div containerItems">

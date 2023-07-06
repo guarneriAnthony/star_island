@@ -1,11 +1,11 @@
 <?php require_once 'config/function.php';
 require_once 'inc/header.inc.php';
 ?>
-<script src="./script/scriptEquipe.js" defer></script>
+<script src="./script/scriptTeam.js" defer></script>
 
 
 <!--ROLES OF TEAMMATES-->
-<h2>L'equipe</h2>
+<h2>L'team</h2>
 <ul class="roles" id="filtrer">
     <li class="firstLi" id="all">Tous</li>
     <li id="admin">Admins</li>
@@ -15,7 +15,7 @@ require_once 'inc/header.inc.php';
     <li id="helper" class="lastLi">Helpers</li>
 </ul>
 <div class="container">
-    <!--ROW 1 / 3-->
+    <!--ROW 1 / 1-->
     <div class="row">
         <?php
         $i = 0;
@@ -45,5 +45,5 @@ require_once 'inc/header.inc.php';
 
 
 <?php require_once 'inc/sideBar.php'; ?>
-<link rel="stylesheet" href="./css/style_equipe.css">
+<link rel="stylesheet" href="./css/style_team.css">
 <?php require_once 'inc/footer.inc.php'; ?>

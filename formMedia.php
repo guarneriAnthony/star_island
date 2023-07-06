@@ -67,8 +67,8 @@ if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'd
     $media_id = execute("DELETE FROM media WHERE id = :id", array(
         ':id' => $_GET['id']
     ));
-
-    header('location: ./formmedia.php');
+                            /*si team media, supprimer dans team media*/ 
+    header('location: ./formMedia.php');
     exit();
 }
 ?>

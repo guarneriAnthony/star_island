@@ -41,7 +41,7 @@ images.forEach(function (image) {
   });
 });
 
-/*randomisation dimages*/
+/*randomisation dimages
 function getRandomImage() {
   let imageList = [
     "./assets/hans4.png",
@@ -51,6 +51,7 @@ function getRandomImage() {
   let randmIndex = Math.floor(Math.random() * imageList.length);
   return imageList[randmIndex];
 }
+*/
 
 /*function de dropdown des avatars*/
 function toggleDropdown(button) {
@@ -61,3 +62,5 @@ function toggleDropdown(button) {
     dropdownMenu.style.display = "none";
   }
 }
+
+
