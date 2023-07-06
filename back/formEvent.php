@@ -4,8 +4,8 @@
     }
 </style>
 <?php
-require_once './config/function.php';
-require_once './inc/formHeader.inc.php';
+require_once '../config/function.php';
+require_once '../inc/formHeader.inc.php';
 
 /*Debut de mon controle de formulaie de 'event$event'*/
 if (!empty($_POST)) {
@@ -76,7 +76,6 @@ if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'd
 
 
 <!--Post de event-->
-
 <form class="mt-5 w-75 mx-auto" method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="title" class="form-label">Nom de l'event' :</label>

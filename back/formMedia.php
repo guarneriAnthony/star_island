@@ -7,8 +7,8 @@
     }
 </style>
 <?php
-require_once './config/function.php';
-require_once './inc/formHeader.inc.php';
+require_once '../config/function.php';
+require_once '../inc/formHeader.inc.php';
 
 $medias = execute("SELECT * FROM media")->fetchAll(PDO::FETCH_ASSOC);
 $media_types = execute("SELECT * FROM media_type")->fetchAll(PDO::FETCH_ASSOC);
@@ -67,7 +67,7 @@ if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'd
     $media_id = execute("DELETE FROM media WHERE id = :id", array(
         ':id' => $_GET['id']
     ));
-                            /*si team media, supprimer dans team media*/ 
+                          
     header('location: ./formMedia.php');
     exit();
 }
@@ -143,9 +143,5 @@ if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'd
     </tbody>
 </table>
 
-$media_file = $_FILES['media_file'];
-$picture = date_format(new DateTime(), 'Y_m_d_H_i_s') . $media_file['name'];
-if (!file_exists('upload/')) {
-mkdir('upload', 0777);
-}
-move_uploaded_file($media_file['tmp_name'], 'upload/' . $picture);
+
+si team media, supprimer dans team media

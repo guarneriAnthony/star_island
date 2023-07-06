@@ -4,8 +4,8 @@
     }
 </style>
 <?php
-require_once './config/function.php';
-require_once './inc/formHeader.inc.php';
+require_once '../config/function.php';
+require_once '../inc/formHeader.inc.php';
 
 
 $pages = execute("SELECT * FROM page")->fetchAll(PDO::FETCH_ASSOC);
@@ -32,13 +32,7 @@ if (!empty($_POST)) {
                 ':title' => $_POST['title'],
                 ':description' => $_POST['description'],
                 'page_id' => $_POST['page_id']
-            ), ' ');
-            // execute("INSERT INTO event_content (event_id, content_id) VALUES (:event_id, :content_id)", array (
-            //     ':event_id'=>
-            //     ':content_id'=> $lastContent
-            // ));
-            // header('location: ./formContent.php');
-            // exit();
+            ));
         } else {
             execute("UPDATE content SET title = :title, description = :description, page_id = :page_id WHERE id = :id", array(
                 ":title" => $_POST['title'],

@@ -3,7 +3,7 @@
         margin-top: 20vh;
     }
 </style>
-<script src="script/scriptFormTeam.js" defer></script>
+<script src="../script/scriptFormTeam.js" defer></script>
 <?php
 require_once '../config/function.php';
 require_once '../inc/formHeader.inc.php';
@@ -105,8 +105,6 @@ if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'd
 ?>
 
 <!--Post de Media-->
-
-
 <form class="mt-5 w-75 mx-auto" method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="nickname" class="form-label">Nom :</label>

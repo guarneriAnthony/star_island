@@ -23,28 +23,28 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item" id="ico-home">
-                            <a class="nav-link active" href="http://localhost/PHP/star_island/index.php"><img src="http://localhost/PHP/star_island/assets/home.png" alt="logo home"></a>
+                            <a class="nav-link active" href="http://localhost/PHP/star_island/back/index.php"><img src="http://localhost/PHP/star_island/assets/home.png" alt="logo home"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/PHP/star_island/formMedia_type.php">Media_type</a>
+                            <a class="nav-link active" href="http://localhost/PHP/star_island/back/formMedia_type.php">Media_type</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PHP/star_island/formPage.php">Page</a>
+                            <a class="nav-link" href="http://localhost/PHP/star_island/back/formPage.php">Page</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PHP/star_island/formContent.php">Content</a>
+                            <a class="nav-link" href="http://localhost/PHP/star_island/back/formContent.php">Content</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PHP/star_island/back/formTeam.php">L'equpie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PHP/star_island/formMedia.php">Media</a>
+                            <a class="nav-link" href="http://localhost/PHP/star_island/back/formMedia.php">Media</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PHP/star_island/formComment.php">Comments</a>
+                            <a class="nav-link" href="http://localhost/PHP/star_island/back/formComment.php">Comments</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PHP/star_island/formEvent.php">Events</a>
+                            <a class="nav-link" href="http://localhost/PHP/star_island/back/formEvent.php">Events</a>
                         </li>
                     </ul>
                 </div>

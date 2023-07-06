@@ -4,10 +4,8 @@
     }
 </style>
 <?php 
-require_once './config/function.php';
-require_once './inc/formHeader.inc.php';
-
-
+require_once '../config/function.php';
+require_once '../inc/formHeader.inc.php';
 
 
  /*Debut de mon controle de formulaie de 'page'*/ 
