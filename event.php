@@ -6,6 +6,7 @@ INNER JOIN event_content ec ON e.id = ec.event_id
 INNER JOIN content c ON c.id = ec.content_id 
 WHERE e.id = $_GET[evi]"; 
 $event = execute($sql)->fetch(PDO::FETCH_ASSOC);
+
 echo '<pre>';
 var_dump($event);
 echo'</pre>';

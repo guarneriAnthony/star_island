@@ -37,7 +37,6 @@ if (!empty($_POST)) {
             ));
             header('location: ./formevent.php');
             exit();
-
         } else {
             execute("UPDATE event SET start_date = :start_date, end_date = :end_date WHERE id = :id", array(
                 ":start_date" => $_POST['start_date'],
@@ -55,15 +54,19 @@ FROM event e
 INNER JOIN event_content ec ON e.id = ec.event_id 
 INNER JOIN content c ON c.id = ec.content_id  ";
 $contentEvents = execute($sql)->fetchALL(PDO::FETCH_ASSOC);
-// $contents = execute("SELECT * FROM content")->fetchALL(PDO::FETCH_ASSOC);
-// $envents = execute("SELECT * FROM event")->fetchAll(PDO::FETCH_ASSOC);
 
 
 if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'edit') {
-    $event_id = execute("SELECT * FROM event WHERE id = :id", array(
+    $sql = "SELECT c.*, e.*
+FROM event e
+INNER JOIN event_content ec ON e.id = ec.event_id
+INNER JOIN content c ON c.id = ec.content_id
+WHERE e.id = :id";
+    $eventContentActive_id = execute($sql, array(
         ':id' => $_GET['id']
     ))->fetch(PDO::FETCH_ASSOC);
 }
+
 if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'del') {
     $event_id = execute("DELETE FROM event WHERE id = :id", array(
         ':id' => $_GET['id']
@@ -79,29 +82,28 @@ if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'd
 <form class="mt-5 w-75 mx-auto" method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="title" class="form-label">Nom de l'event' :</label>
-        <input name="title" type="text" class="form-control" id="title" value="<?= $content_id['title'] ?? ""; ?>">
+        <input name="title" type="text" class="form-control" id="title" value="<?= $eventContentActive_id['title'] ?? ""; ?>">
         <small class="text-danger"><?= $title ?? ""; ?></small>
     </div>
     <div class="mb-3">
         <label for="description" class="form-label">Description de l'event' :</label>
-        <input name="description" type="text" class="form-control" id="description" value="<?= $content_id['description'] ?? ""; ?>">
+        <input name="description" type="text" class="form-control" id="description" value="<?= $eventContentActive_id['description'] ?? ""; ?>">
         <small class="text-danger"><?= $description ?? ""; ?></small>
     </div>
     <div class="mb-3">
         <label for="start_date" class="form-label">Date de debut :</label>
-        <input type="datetime-local" id="start_date" name="start_date" value="<?= $event_id['start_date'] ?? ""; ?>">
+        <input type="datetime-local" id="start_date" name="start_date" value="<?= $eventContentActive_id['start_date'] ?? ""; ?>">
         <small class="text-danger"><?= $start_date ?? ""; ?></small>
     </div>
     <div class="mb-3">
         <label for="end_date" class="form-label">Date de fin :</label>
-        <input type="datetime-local" id="end_date" name="end_date" value="<?= $event_id['end_date'] ?? ""; ?>">
+        <input type="datetime-local" id="end_date" name="end_date" value="<?= $eventContentActive_id['end_date'] ?? ""; ?>">
         <small class="text-danger"><?= $end_date ?? ""; ?></small>
     </div>
 
     <input type="hidden" name="id" value="<?= $event_id['id'] ?? ""; ?>">
     <button type="submit" class="btn btn-primary">Submit date event</button>
 </form>
-
 
 
 
