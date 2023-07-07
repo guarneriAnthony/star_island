@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Page Index</title>
-    <script src="http://localhost/PHP/star_island/script/bootstrap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        defer
+    </script>
+
+
 
     <link rel="stylesheet" href="http://localhost/PHP/star_island/css/style_bootstrap.css" />
     <link rel="stylesheet" href="http://localhost/PHP/star_island/css/style_header.css">
@@ -34,7 +38,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PHP/star_island/team.php">Team</a>
                         </li>
+                        
                     </ul>
+
+
                     <div class="class-div containerItems">
                         <ul class="class-ul">
                             <li class="nav-item item-row firstItem">
@@ -53,18 +60,26 @@
                                 WHERE end_date > NOW()"
                             )->fetchAll(PDO::FETCH_ASSOC);
                             ?>
-                            <li class="nav-item item-row secondItem">
-                                <a href="http://localhost/PHP/star_island/event.php"><img src="http://localhost/PHP/star_island/assets/vector1.png " class="imgs-nav" alt="logo event"></a>
-                                
-                               <?php foreach ($events as $event) : ?>
-                                    <a href="http://localhost/PHP/star_island/event.php?evi=<?= $event['id']; ?>"><?= $event['title'] ?></a>
-                                <?php endforeach; ?>
-                            
-                                
-                            </li>
+
+
+                            <?php if (!empty($events)) : ?>
+                                <li class="nav-item dropdown item-row firstItem">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <?php foreach ($events as $event) : ?>
+                                            <li><a href="http://localhost/PHP/star_island/event.php?evi=<?= $event['id']; ?>"><?= $event['title'] ?></a>
+                                            </li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </li>
+                            <?php endif; ?>
 
                         </ul>
                     </div>
+
+
                 </div>
             </div>
         </nav>

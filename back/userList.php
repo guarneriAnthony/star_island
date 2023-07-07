@@ -1,6 +1,6 @@
 <?php  require_once '../config/function.php';
 
-if (!admin()) {
+if (!$_SESSION['user']) {
     header('location: ../security/login.php');
 }
         require_once '../inc/header.inc.php';
@@ -14,25 +14,6 @@ if (!admin()) {
               $user=execute("SELECT role FROM user WHERE id=:id", array(
                       ':id'=>$_GET['i']
               ))->fetch(PDO::FETCH_ASSOC);
-              if ($user['role']=='ROLE_USER'){
-
-                  execute("UPDATE user SET role=:role WHERE id=:id",array(
-                          ':role'=>'ROLE_ADMIN',
-                      ':id'=>$_GET['i']
-                  ));
-                               header('location:userList.php');
-                               exit;
-              }else{
-                  execute("UPDATE user SET role=:role WHERE id=:id",array(
-                      ':role'=>'ROLE_USER',
-                      ':id'=>$_GET['i']
-                  ));
-             header('location:userList.php');
-             exit;
-              }
-
-
-
           }
 
           // mise en place de la suppression
@@ -42,20 +23,8 @@ if (!admin()) {
               ));
               header('location:userList.php');
               exit;
-
-
-
           }
-
-
-
-
-
       }
-
-
-
-
         ?>
 
 

@@ -1,3 +1,11 @@
+<?php 
+if (empty($_SESSION['user']) || isset($_POST['unset']) ) {
+    unset($_SESSION['user']);
+    header('location: http://localhost/PHP/star_island/security/login.php');
+    exit();
+}
+?>
+
 <!doctype html>
 <html lang="fr">
 
@@ -35,7 +43,7 @@
                             <a class="nav-link" href="http://localhost/PHP/star_island/back/formContent.php">Content</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PHP/star_island/back/formTeam.php">L'equpie</a>
+                            <a class="nav-link" href="http://localhost/PHP/star_island/back/formTeam.php">L'equipe</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PHP/star_island/back/formMedia.php">Media</a>
@@ -47,9 +55,12 @@
                             <a class="nav-link" href="http://localhost/PHP/star_island/back/formEvent.php">Events</a>
                         </li>
                     </ul>
+                    <form method="post">
+                        <input type="hidden" name="unset">
+                        <button type="submit" class="btn btn-warning">Déconnexion</button>
+                    </form>
                 </div>
             </div>
         </nav>
     </header>
-
     <main>

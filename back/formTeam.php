@@ -8,6 +8,7 @@
 require_once '../config/function.php';
 require_once '../inc/formHeader.inc.php';
 
+
 $pages =  execute("SELECT * FROM page WHERE meta_title = 'Team'")->fetch(PDO::FETCH_ASSOC);
 $typesLink =  execute("SELECT * FROM media_type WHERE type = 'link'")->fetch(PDO::FETCH_ASSOC);
 $typesAvatar =  execute("SELECT * FROM media_type WHERE type = 'avatar'")->fetch(PDO::FETCH_ASSOC);

@@ -1,46 +1,26 @@
 <?php
 require_once 'Db.php';
 
-function debug($data)
-{
-    echo '<pre>';
-    print_r($data);
-    echo '</pre>';
-    die();
-}
-
 function execute(string $requete, array $data=[],$lastId=null)
 {
-    // boucle pour echapper les caractères speciaux (pour neutraliser les balise <style> ou <script>) en entité html et de même supprimer les espaces éventuels en début de fin de chaine de caractère
     foreach ($data as $marqueur => $valeur){
-        // ici on réaffecte à notre tableau $data
-        // les nouvelles valeurs échappées et sans espaces pour chaque tour de boucle
         $data[$marqueur]=trim(htmlspecialchars($valeur));
-
     }
-    $pdo=Db::getDB(); // connexion à la BDD provenant de Db.php
-    $resultat= $pdo->prepare($requete);// on prépare la requête envoyée avec marqueur (:marqueur)
+    $pdo=Db::getDB(); 
+    $resultat= $pdo->prepare($requete);
+    $success=$resultat->execute($data);
 
-    $success=$resultat->execute($data);// on execute en passant notre tableau associatif de nos marqueurs avec leur valeurs
-
-    if($success){ // si tout s'est bien passé ($success renvoi true ou false)
-
-        if ($lastId){ // si le paramètre optionnel $lastId est renseigné
-
-            return $pdo->lastInsertId();// on renvoie le dernier id inséré
-
-        }else{ // sinon on renvoi le jeu de résultat
+    if($success){ 
+        if ($lastId){ 
+            return $pdo->lastInsertId();
+        }else{ 
             return $resultat;
         }
-
-    }else{ // on s'assure d'un retour même si le traitement a échoué
+    }else{ 
         return  false;
     }
-
-
-
-
 }
+
 function password_strength_check($password)
 {
     $regex = '/^(?=.*[A-Z])(?=.*[^a-zA-Z\d]).{6,}$/';
@@ -60,10 +40,4 @@ function connect(){
     }
 }
 
-function admin(){
-    if (connect() && $_SESSION['user']['role'] == 'ROLE_ADMIN') {
-        return true;
-    } else {
-        return false;
-    }
-}
+

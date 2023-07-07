@@ -11,6 +11,8 @@
 require_once '../config/function.php';
 require_once '../inc/formHeader.inc.php';
 
+
+
 $medias = execute("SELECT * FROM media")->fetchAll(PDO::FETCH_ASSOC);
 $media_types = execute("SELECT * FROM media_type")->fetchAll(PDO::FETCH_ASSOC);
 $mediaPages = execute("SELECT * FROM page")->fetchAll(PDO::FETCH_ASSOC);

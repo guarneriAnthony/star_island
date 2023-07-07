@@ -5,7 +5,7 @@ require_once 'inc/header.inc.php';
 
 
 <!--ROLES OF TEAMMATES-->
-<h2>L'team</h2>
+<h2>Team</h2>
 <ul class="roles" id="filtrer">
     <li class="firstLi" id="all">Tous</li>
     <li id="admin">Admins</li>

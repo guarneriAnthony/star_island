@@ -8,6 +8,7 @@ require_once '../config/function.php';
 require_once '../inc/formHeader.inc.php';
 
 
+
 $comments = execute("SELECT * FROM comment")->fetchAll(PDO::FETCH_ASSOC);
 
  /*Debut de mon controle comment'*/ 

@@ -8,6 +8,7 @@ require_once '../config/function.php';
 require_once '../inc/formHeader.inc.php';
 
 
+
 $pages = execute("SELECT * FROM page")->fetchAll(PDO::FETCH_ASSOC);
 $contentPages = execute("SELECT c.*, p.meta_title FROM content c INNER JOIN page p ON c.page_id = p.id")->fetchAll(PDO::FETCH_ASSOC);
 
