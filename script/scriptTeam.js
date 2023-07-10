@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
   let filterItems = document.querySelectorAll(".roles li");
   let columns = document.querySelectorAll(".dropdown");
 
+  console.log(filterItems);
+  console.log(columns);
+
   filterItems.forEach(function (item) {
     item.addEventListener("click", function () {
       let selectedValue = this.id;

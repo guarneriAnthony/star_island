@@ -6,9 +6,12 @@
 <?php
 require_once '../config/function.php';
 require_once '../inc/formHeader.inc.php';
+?>
 
 
 
+<h2 class="text-center"> MEDIA TYPE </h2>
+<?php
 /*Debut de mon controle de formulaie de 'page'*/
 if (!empty($_POST)) {
     $error = false;

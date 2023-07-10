@@ -6,7 +6,11 @@
 <?php 
 require_once '../config/function.php';
 require_once '../inc/formHeader.inc.php';
+?>
 
+<h2 class="text-center">COMMENTAIRES</h2>
+
+<?php  
 
 
 $comments = execute("SELECT * FROM comment")->fetchAll(PDO::FETCH_ASSOC);

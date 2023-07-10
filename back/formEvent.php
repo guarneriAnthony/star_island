@@ -6,7 +6,11 @@
 <?php
 require_once '../config/function.php';
 require_once '../inc/formHeader.inc.php';
+?>
 
+<h2 class="text-center">EVENEMENTS</h2>
+
+<?php  
 /*Debut de mon controle de formulaie de 'event$event'*/
 if (!empty($_POST)) {
     $error = false;

@@ -30,11 +30,8 @@ if (empty($_SESSION['user']) || isset($_POST['unset']) ) {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item" id="ico-home">
-                            <a class="nav-link active" href="http://localhost/PHP/star_island/back/index.php"><img src="http://localhost/PHP/star_island/assets/home.png" alt="logo home"></a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/PHP/star_island/back/formMedia_type.php">Media_type</a>
+                            <a class="nav-link " href="http://localhost/PHP/star_island/back/formMedia_type.php">Media_type</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PHP/star_island/back/formPage.php">Page</a>

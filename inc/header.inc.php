@@ -27,10 +27,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item" id="ico-home">
-                            <a class="nav-link active" href="http://localhost/PHP/star_island/index.php"><img src="http://localhost/PHP/star_island/assets/home.png" alt="logo home"></a>
+                            <a class="nav-link" href="http://localhost/PHP/star_island/index.php"><img src="http://localhost/PHP/star_island/assets/home.png" alt="logo home"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/PHP/star_island/galerie.php">Galerie</a>
+                            <a class="nav-link" href="http://localhost/PHP/star_island/galerie.php">Galerie</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PHP/star_island/vip.php">Devenir VIP</a>
@@ -38,7 +38,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PHP/star_island/team.php">Team</a>
                         </li>
-                        
                     </ul>
 
 
@@ -59,18 +58,13 @@
                                 INNER JOIN content c ON c.id = ec.content_id
                                 WHERE end_date > NOW()"
                             )->fetchAll(PDO::FETCH_ASSOC);
-                            ?>
 
-
-                            <?php if (!empty($events)) : ?>
-                                <li class="nav-item dropdown item-row firstItem">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events
-                                    </a>
-
+                            if (!empty($events)): ?>
+                                <li class="nav-item dropdown-center item-row firstItem">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
                                     <ul class="dropdown-menu">
                                         <?php foreach ($events as $event) : ?>
-                                            <li><a href="http://localhost/PHP/star_island/event.php?evi=<?= $event['id']; ?>"><?= $event['title'] ?></a>
-                                            </li>
+                                            <li><a href="http://localhost/PHP/star_island/event.php?evi=<?= $event['id']; ?>"><?= $event['title'] ?></a></li>
                                         <?php endforeach; ?>
                                     </ul>
                                 </li>

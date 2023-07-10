@@ -23,8 +23,8 @@ if (!empty($_POST['email'])) {
             $user = $user->fetch(PDO::FETCH_ASSOC);
 
             if (password_verify($_POST['password'], $user['password'])) {
-                $_SESSION['user'] = $user;                                  //ici
-                $_SESSION['messages']['success'][] = "Bienvenue !";
+                $_SESSION['user'] = $user;
+                //$_SESSION['messages']['success'][] = "Bienvenue !";
                 header('location: http://localhost/PHP/star_island/back/formMedia_type.php');
                 exit();
             }

@@ -10,7 +10,11 @@
 <?php
 require_once '../config/function.php';
 require_once '../inc/formHeader.inc.php';
+?>
 
+<h2 class="text-center">MEDIAS</h2>
+
+<?php  
 
 
 $medias = execute("SELECT * FROM media")->fetchAll(PDO::FETCH_ASSOC);
