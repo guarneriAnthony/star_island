@@ -1,7 +1,7 @@
 <?php require_once 'config/function.php';
 require_once 'inc/header.inc.php';
 ?>
-<?php 
+<?php
 $dt = time();
 $dtFormat = date("d/m/Y", $dt);
 
@@ -11,9 +11,9 @@ if ($_POST) {
         ':rating' => $_POST['rating'],
     ),);
     header('Location: /PHP/star_island/');
-}   
+}
 
-$comments = execute("SELECT * FROM comment WHERE validate = 1 ORDER BY id DESC LIMIT 4") -> fetchAll(PDO::FETCH_ASSOC);
+$comments = execute("SELECT * FROM comment WHERE validate = 1 ORDER BY id DESC LIMIT 4")->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <script src="script/scriptIndex.js" defer></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -72,42 +72,46 @@ $comments = execute("SELECT * FROM comment WHERE validate = 1 ORDER BY id DESC L
 <div class=" container containerComments">
     <!--COMMENTS LEFT-->
     <section class="commentsLeft commentsBorders">
-        <?php 
-        $direction = true;
-            foreach ($comments as $comment) :      
-                if ($direction) {
-                    $position = "Left";
-                    $direction = false;
-                } else {
-                    $position = "Right";
-                    $direction = true;
-                }
-        ?>
-        <?php if ($comment['validate'] == 1) : ?>
-        <div class="comment<?= $position?>">
-            <div class="containerStars">
-                <?php 
-                $i = 0;
-                for (; $i < $comment['rating']; $i++) : ?>
-                    <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
-                <?php
-                endfor;
-                for (; $i < 5; $i++) : ?>
-                    <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
-                <?php  endfor?>
-            </div>
-            <div class="containerInterComments">
-                <div class="containerImgComments">
-                    <img src="./assets/Souen4.png" class="imgComments" alt="image avatar">
-                </div>
-                <div class="containerTextComments">
-                    <p class="comments"><?=$comment['comment']?></p>
-                    <p class="dateComments">Publier: <?= $comment['publish_date'] ?></p>
-                </div>
 
-            </div>
-        </div>
-        <?php endif; ?>
+        <?php
+        $avatar = ['Souen4.png', 'charmilia4.png', 'hans4.png'];
+
+        $direction = true;
+        foreach ($comments as $comment) :
+            if ($direction) {
+                $position = "Left";
+                $direction = false;
+            } else {
+                $position = "Right";
+                $direction = true;
+            }
+        ?>
+            <?php if ($comment['validate'] == 1) : ?>
+                <div class="comment<?= $position ?>">
+                    <div class="containerStars">
+                        <?php
+                        $i = 0;
+                        for (; $i < $comment['rating']; $i++) : ?>
+                            <img src="./assets/star.png" class="imgComments" alt="image etoile"></img>
+                        <?php
+                        endfor;
+                        for (; $i < 5; $i++) : ?>
+                            <img src="./assets/starBlack.png" class="imgComments" alt="image etoile"></img>
+                        <?php endfor ?>
+                    </div>
+                    <div class="containerInterComments">
+                        <div class="containerImgComments">
+
+                            <img src="./assets/<?= $avatar[array_rand($avatar)];  ?>" class="imgComments" alt="image avatar">
+                        </div>
+                        <div class="containerTextComments">
+                            <p class="comments"><?= $comment['comment'] ?></p>
+                            <p class="dateComments">Publier: <?= $comment['publish_date'] ?></p>
+                        </div>
+
+                    </div>
+                </div>
+            <?php endif; ?>
 
         <?php endforeach ?>
     </section>
@@ -117,21 +121,22 @@ $comments = execute("SELECT * FROM comment WHERE validate = 1 ORDER BY id DESC L
         <div class="card-body formIndex">
             <h5 class="card-title">Votre avis nous intéresse</h5>
             <div class="containerStars">
-                <img src="./assets/starBlack.png" class="imgComments changeStar star0" alt="image etoile" data_position = "1"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar star1" alt="image etoile" data_position = "2"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar star2" alt="image etoile" data_position = "3"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar star3" alt="image etoile" data_position = "4"></img>
-                <img src="./assets/starBlack.png" class="imgComments changeStar star4" alt="image etoile" data_position = "5"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star0" alt="image etoile" data_position="1"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star1" alt="image etoile" data_position="2"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star2" alt="image etoile" data_position="3"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star3" alt="image etoile" data_position="4"></img>
+                <img src="./assets/starBlack.png" class="imgComments changeStar star4" alt="image etoile" data_position="5"></img>
             </div>
-            <form class="form-floating" method="post" >
+            <form class="form-floating" method="post">
                 <textarea name="comment" id="floatingTextarea2" class="form-control" placeholder="Ecrivez votre commentaire :" style="height: 100px"></textarea>
                 <label for="floatingTextarea2">Ecrivez votre commentaire :</label>
-                <input type="hidden" id="nbrStar" name="rating" value="" />  
+                <input type="hidden" id="nbrStar" name="rating" value="" />
                 <button type="submit" class="button-46">Publier</button>
-            </form> 
-                     
+            </form>
+
         </div>
     </div>
+    
 
 
     <link rel="stylesheet" href="./css/style_index.css">

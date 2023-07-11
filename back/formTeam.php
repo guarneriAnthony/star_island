@@ -7,11 +7,8 @@
 <?php
 require_once '../config/function.php';
 require_once '../inc/formHeader.inc.php';
-?>
 
-<h2 class="text-center">L'EQUIPE</h2>
 
-<?php  
 $pages =  execute("SELECT * FROM page WHERE meta_title = 'Team'")->fetch(PDO::FETCH_ASSOC);
 $typesLink =  execute("SELECT * FROM media_type WHERE type = 'link'")->fetch(PDO::FETCH_ASSOC);
 $typesAvatar =  execute("SELECT * FROM media_type WHERE type = 'avatar'")->fetch(PDO::FETCH_ASSOC);
@@ -187,7 +184,6 @@ if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'd
                 <td><?= $team['nickname']; ?></td>
                 <td><?= $team['role']; ?></td>
                 <td>
-                    <a href="?id=<?= $team['id']; ?>&a=edit" class="btn btn-outline-info">Modifier</a>
                     <a href="?id=<?= $team['id']; ?>&a=del" onclick="return confirm('Etes-vous sur ?')" class="btn btn-outline-danger">Supprimer</a>
                 </td>
             </tr>

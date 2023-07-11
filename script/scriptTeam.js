@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
       let selectedValue = this.id;
 
       columns.forEach(function (column) {
-        let role = column.children[2].textContent;
-        console.log(column.children[2].textContent);
+        let role = column.children[3].textContent;
+        console.log(column.children[3].textContent);
         let container = column.parentElement;
 
         if (selectedValue === "all" || role.toLowerCase() === selectedValue) {
@@ -27,22 +27,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 /*change img and probaly lets include one url*/
-let images = document.querySelectorAll(".myImage");
+// let images = document.querySelectorAll(".myImage");
 
-images.forEach(function (image) {
-  image.addEventListener("click", function () {
-    if (
-      this.src.includes("hans4.png") ||
-      this.src.includes("Souen4.png") ||
-      this.src.includes("charmilia4.png")
-    ) {
-      this.src = "./assets/discorde.png";
-    } else {
-      let randomImage = getRandomImage();
-      this.src = randomImage;
-    }
-  });
-});
+// images.forEach(function (image) {
+//   image.addEventListener("click", function () {
+//     if (
+//       this.src.includes("hans4.png") ||
+//       this.src.includes("Souen4.png") ||
+//       this.src.includes("charmilia4.png")
+//     ) {
+//       this.src = "./assets/discorde.png";
+//     } else {
+//       let randomImage = getRandomImage();
+//       this.src = randomImage;
+//     }
+//   });
+// });
+
+
 
 /*randomisation dimages
 function getRandomImage() {

@@ -14,7 +14,7 @@ require_once '../inc/formHeader.inc.php';
 
 <h2 class="text-center">MEDIAS</h2>
 
-<?php  
+<?php
 
 
 $medias = execute("SELECT * FROM media")->fetchAll(PDO::FETCH_ASSOC);
@@ -34,20 +34,23 @@ if (!empty($_POST)) {
     }
 
     if (!$error) {
-
-
-        if (empty($_POST['media_file']) && !empty($_POST['link'])) {
-            $media_path = $_POST['link'];
-        } else {
+        
+        if (!empty($_FILES['media_file'])) {
+            if (!file_exists('../upload')) {
+                mkdir('../upload', 777);
+            }
             $media_file = $_FILES['media_file'];
-            $media_path = 'upload/' . $media_file['name'];
-            move_uploaded_file($media_file['tmp_name'], $media_path);
+            $media_path = '../upload/' .uniqid() .date_format(new DateTime(), 'd_m_Y_H_is') .$media_file['name'];
+            copy($media_file['tmp_name'], $media_path);
         }
+
+
+
 
         if (empty($_POST['id'])) {
             execute("INSERT INTO media (name, path, pages_id, media_type_id) VALUES (:name, :path, :pages_id, :media_type_id)", array(
                 ':name' => $_POST['name'],
-                ':path' => empty($_POST['media_link']) ? $media_path : $_POST['media_link'],
+                ':path' => $media_path,
                 'pages_id' => $_POST['page_id'],
                 'media_type_id' => $_POST['type_id']
             ));
@@ -56,7 +59,7 @@ if (!empty($_POST)) {
         } else {
             execute("UPDATE media SET name = :name, path = :path WHERE id = :id", array(
                 ":name" => $_POST['name'],
-                ":path" => empty($_POST['media_link']) ? $media_path : $_POST['media_link'],
+                ":path" => $_POST['media_link'],
                 ":id" => $_POST['id']
             ));
         }
@@ -92,11 +95,6 @@ if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'd
         <input name="name" type="text" class="form-control" id="name" value="<?= $mediaPageTypes['name'] ?? ""; ?>">
         <small class="text-danger"><?= $name ?? ""; ?></small>
     </div>
-    <div class="mb-3">
-        <label for="link" class="form-label">Lien du média :</label>
-        <input name="link" type="text" class="form-control" id="link" value="<?= $mediaPageTypes['path'] ?? ""; ?>">
-        <small class="text-danger"><?= $link ?? ""; ?></small>
-    </div>
     <div class="mb-3 media-file-wrapper">
         <label for="media_file" class="form-label">Exportez votre média :</label>
         <input name="media_file" type="file" class="form-control" id="media_file">
@@ -127,8 +125,8 @@ if (!empty($_GET) && isset($_GET['id']) && isset($_GET['a']) && $_GET['a'] == 'd
     <thead>
         <tr>
             <th>Nom du média</th>
-            <th>Path du média</th>
-            <th>Lien / image</th>
+            <th>Chemin du média</th>
+            <th>Image</th>
             <th>Action</th>
         </tr>
     </thead>
