@@ -8,7 +8,7 @@ const CONFIG=[
         'HOST'=>'127.0.0.1',
         'PORT'=>'3306',
         'NAME'=>'star_island',
-        'USER'=>'root',
+        'USER'=>'phpmyadmin',
         'PWD'=>'1222'
 
     ],
